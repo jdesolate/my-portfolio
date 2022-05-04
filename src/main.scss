@@ -1,34 +1,116 @@
-/* reset & common styles */
-body,
-ul,
-h1,
-h2,
-h3,
-p,
-button,
-a,
-div {
-	margin: 0;
-	padding: 0;
-	color: #313131;
-	font-family: 'Montserrat';
-	letter-spacing: 2px;
-	list-style-type: none;
-	text-decoration: none;
-}
-
-button {
-	padding: 10px 30px;
-	font-size: 1em;
-	background: transparent;
-	border-radius: 50px;
-	border: 1px solid white;
-	margin: 40px auto 0;
-	cursor: pointer;
-	opacity: 0.7;
-}
-
+//navbar
 .navbar {
-	display: inline;
 	background-color: #fff;
+	margin: 0;
+	padding: 0.1rem;
+	height: 5rem;
+	ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: center;
+		list-style-type: none;
+	}
+
+	li a {
+		text-decoration: none;
+		margin-right: 4rem;
+		font-family: 'Montserrat';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 1rem;
+		line-height: 1rem;
+		color: #313131;
+	}
+	img {
+		width: 4rem;
+	}
+
+	li a:hover {
+		color: #31cbd6;
+	}
+}
+
+.header {
+	height: calc(100vh - 8rem);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	&-container {
+		height: 100%;
+		width: 85%;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		&-col1 {
+			width: 50%;
+			&-text1 {
+				font-family: 'Montserrat';
+				font-style: normal;
+				font-weight: 700;
+				font-size: 2.8rem;
+				line-height: 2.8rem;
+				color: #313131;
+			}
+			&-name {
+				font-family: 'Montserrat';
+				font-style: normal;
+				font-weight: 800;
+				font-size: 2.8rem;
+				line-height: 2.8rem;
+
+				background: linear-gradient(
+					180deg,
+					#0075e0 0%,
+					#0086ff 30.21%,
+					rgba(0, 134, 255, 0) 98.96%
+				);
+				-webkit-background-clip: text;
+				-webkit-text-fill-color: transparent;
+				background-clip: text;
+				// text-fill-color: transparent;
+			}
+			&-text2 {
+				font-family: 'Montserrat';
+				font-style: normal;
+				font-weight: 600;
+				font-size: 1.2rem;
+				line-height: 1.2rem;
+				color: #313131;
+			}
+			&-text3 {
+				font-family: 'Montserrat';
+				font-style: normal;
+				font-weight: 600;
+				font-size: 1.2rem;
+				line-height: 1.2rem;
+				color: rgba(49, 49, 49, 0.5);
+			}
+			button {
+				margin-top: 2rem;
+				width: 12rem;
+				height: 4rem;
+				font-family: 'Montserrat';
+				font-style: normal;
+				font-weight: 700;
+				font-size: 1.2rem;
+				line-height: 1.5rem;
+				background-color: #fff;
+				color: #313131;
+				border: #313131 1px solid;
+				border-radius: 10px;
+				cursor: pointer;
+				&:hover {
+					color: #31cbd6;
+				}
+			}
+		}
+		&-col2 {
+			width: 50%;
+			img {
+				width: fit-content;
+			}
+		}
+	}
 }
