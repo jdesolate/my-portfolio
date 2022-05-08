@@ -1,6 +1,6 @@
 //navbar
 .navbar {
-	background-color: #fff;
+	background-color: transparent;
 	margin: 0;
 	padding: 0.1rem;
 	height: 5rem;
@@ -32,85 +32,142 @@
 }
 
 .header {
-	height: calc(100vh - 8rem);
+	height: calc(500vh - 8rem);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	&-container {
-		height: 100%;
+		height: 100vh;
 		width: 85%;
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 		&-col1 {
-			width: 50%;
-			&-text1 {
-				font-family: 'Montserrat';
-				font-style: normal;
-				font-weight: 700;
-				font-size: 2.8rem;
-				line-height: 2.8rem;
-				color: #313131;
-			}
-			&-name {
-				font-family: 'Montserrat';
-				font-style: normal;
-				font-weight: 800;
-				font-size: 2.8rem;
-				line-height: 2.8rem;
+			display: flex;
+			height: 100%;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-evenly;
+			&-textcont {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-end;
+				&-text1 {
+					font-family: 'Montserrat';
+					font-style: normal;
+					font-weight: 700;
+					font-size: 2.8rem;
+					line-height: 2.8rem;
+					color: #013768;
+					margin: 0;
+					&-1 {
+						font-weight: 800;
+					}
+					&-2 {
+						font-weight: 800;
+						color: #fff;
+					}
+					&-3 {
+						color: #fff;
+					}
+				}
 
-				background: linear-gradient(
-					180deg,
-					#0075e0 0%,
-					#0086ff 30.21%,
-					rgba(0, 134, 255, 0) 98.96%
-				);
-				-webkit-background-clip: text;
-				-webkit-text-fill-color: transparent;
-				background-clip: text;
-				// text-fill-color: transparent;
+				&-text2 {
+					padding-top: 0.5rem;
+					font-family: 'Montserrat';
+					font-style: normal;
+					font-weight: 600;
+					font-size: 1.3rem;
+					line-height: 1.3rem;
+					color: #313131;
+				}
 			}
-			&-text2 {
-				font-family: 'Montserrat';
-				font-style: normal;
-				font-weight: 600;
-				font-size: 1.2rem;
-				line-height: 1.2rem;
-				color: #313131;
-			}
-			&-text3 {
-				font-family: 'Montserrat';
-				font-style: normal;
-				font-weight: 600;
-				font-size: 1.2rem;
-				line-height: 1.2rem;
-				color: rgba(49, 49, 49, 0.5);
-			}
-			button {
-				margin-top: 2rem;
-				width: 12rem;
-				height: 4rem;
-				font-family: 'Montserrat';
-				font-style: normal;
-				font-weight: 700;
-				font-size: 1.2rem;
-				line-height: 1.5rem;
-				background-color: #fff;
-				color: #313131;
-				border: #313131 1px solid;
-				border-radius: 10px;
-				cursor: pointer;
-				&:hover {
-					color: #31cbd6;
+
+			&-row {
+				display: flex;
+				flex-direction: row;
+				&-button1 {
+					margin-top: 2rem;
+					margin-right: 2rem;
+					width: 12rem;
+					height: 3.5rem;
+					font-family: 'Montserrat';
+					font-style: normal;
+					font-weight: 700;
+					font-size: 1.2rem;
+					line-height: 1.5rem;
+					background-color: #0091fe;
+					color: #fff;
+					border: 0;
+					border-radius: 10px;
+					cursor: pointer;
+				}
+				&-button2 {
+					margin-top: 2rem;
+					width: 12rem;
+					height: 3.5rem;
+					font-family: 'Montserrat';
+					font-style: normal;
+					font-weight: 700;
+					font-size: 1.2rem;
+					line-height: 1.5rem;
+					background-color: #fff;
+					color: #0091fe;
+					border: 0;
+					border-radius: 10px;
+					cursor: pointer;
 				}
 			}
 		}
-		&-col2 {
-			width: 50%;
-			img {
-				width: fit-content;
-			}
+		&-circle {
+			z-index: -1;
+			position: absolute;
+			width: 450px;
+			height: 450px;
+			left: 55%;
+			top: 15%;
+			border-radius: 50%;
+
+			background: linear-gradient(
+				180deg,
+				#0094fe 0%,
+				#31cbd6 56.77%,
+				#cefcff 100%
+			);
+		}
+		&-circle {
+			z-index: -1;
+			position: absolute;
+			width: 450px;
+			height: 450px;
+			left: 55%;
+			top: 15%;
+			border-radius: 50%;
+
+			background: linear-gradient(
+				180deg,
+				#0094fe 0%,
+				#31cbd6 56.77%,
+				#cefcff 100%
+			);
+		}
+		&-comet {
+			position: absolute;
+			z-index: -1;
+			width: 32.88px;
+			height: 515px;
+			left: 35%;
+			top: 15%;
+			border-radius: 50%;
+
+			background: linear-gradient(
+				180deg,
+				#0094fe -9.95%,
+				#cefcff 50.98%,
+				#ffffff 83.8%
+			);
+			transform: rotate(-121.4deg);
 		}
 	}
 }
