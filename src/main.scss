@@ -159,7 +159,7 @@
 	}
 }
 .techStack {
-	height: 100vh;
+	height: 80vh;
 	// background-color: #0094fe;
 	display: flex;
 	flex-direction: column;
@@ -202,6 +202,157 @@
 			object-fit: contain;
 			height: 125px;
 			width: 125px;
+		}
+	}
+}
+
+.projects {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	&-header {
+		width: 80%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 5vh;
+		&-title {
+			align-self: flex-start;
+			h1 {
+				font-family: 'Montserrat';
+				font-style: normal;
+				font-weight: 700;
+				font-size: 2.8rem;
+				line-height: 2.8rem;
+				margin-bottom: 5vh;
+				color: #013768;
+			}
+			&-comet {
+				// z-index: -1;
+				position: absolute;
+				width: 45.52px;
+				height: 388.24px;
+				left: 20vw;
+				top: 172vh;
+
+				border-radius: 50%;
+
+				background: linear-gradient(
+					180deg,
+					rgba(0, 148, 254, 0.2) -13.6%,
+					rgba(206, 252, 255, 0.2) 50.98%,
+					rgba(255, 255, 255, 0.2) 83.8%
+				);
+				transform: matrix(-0.54, -0.79, 0.92, -0.5, 0, 0);
+			}
+		}
+		p {
+			font-family: 'Montserrat';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 1.5rem;
+			line-height: 1.5rem;
+			text-align: justify;
+			color: #013768;
+		}
+	}
+	&-card {
+		display: flex;
+		flex-direction: row;
+		width: 80vw;
+		position: relative;
+		&-col1 {
+			width: 40%;
+			height: 50vh;
+			border-radius: 10px;
+			position: relative;
+			&-frame {
+				position: relative;
+				z-index: -1;
+				width: 95%;
+				height: 95%;
+				object-fit: contain;
+			}
+			&-overlay {
+				top: 0;
+				right: 0;
+				border-radius: 10px;
+				z-index: 1;
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				background: linear-gradient(
+					180deg,
+					#0094fe 0%,
+					rgba(49, 203, 214, 0.75) 46.35%,
+					rgba(206, 252, 255, 0.6) 100%
+				);
+			}
+			&-logo {
+				top: 0;
+				right: 0;
+				position: absolute;
+				z-index: 2;
+				width: 100%;
+				height: 100%;
+				object-fit: contain;
+			}
+		}
+		&-col2 {
+			width: 60%;
+			padding: 5vh 5vw;
+			// background-color: #31cbd6;
+			&-title {
+				margin-bottom: 5vh;
+				h2 {
+					margin: 0;
+					font-family: 'Montserrat';
+					font-style: normal;
+					font-weight: 700;
+					font-size: 2rem;
+					line-height: 2rem;
+					color: #013768;
+				}
+				h3 {
+					font-family: 'Montserrat';
+					font-style: normal;
+					font-weight: 600;
+					font-size: 1.2rem;
+					line-height: 1.2rem;
+					color: #313131;
+				}
+			}
+			p {
+				font-family: 'Montserrat';
+				font-style: normal;
+				font-weight: 500;
+				font-size: 1rem;
+				line-height: 1rem;
+				text-align: justify;
+				color: #313131;
+				margin-bottom: 10vh;
+			}
+			&-bottom {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				&-left {
+					align-self: flex-start;
+
+					width: 50%;
+				}
+				&-right {
+					width: 50%;
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+					img {
+						height: 50;
+						object-fit: contain;
+					}
+				}
+			}
 		}
 	}
 }
