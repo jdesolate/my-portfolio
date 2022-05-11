@@ -17,12 +17,12 @@ function Header() {
 								</span>
 							</h1>
 
-							<h2 className='header-container-col1-textcont-text2'>
+							<p className='header-container-col1-textcont-text2'>
 								I make UI/UX Design, Web{' '}
 								<span className='header-container-col1-textcont-text1-3'>
 									& Mobile applications
 								</span>
-							</h2>
+							</p>
 						</div>
 						<div className='header-container-col1-row'>
 							<button className='header-container-col1-row-button1'>
