@@ -33,26 +33,44 @@ function Projects() {
 					</div>
 					<div className='projects-card-col2'>
 						<div className='projects-card-col2-title'>
-							<h2>Recycl3R</h2>
+							<h2>ReCycl3R</h2>
 							<h3>Accenture Program the Future 2021</h3>
 						</div>
 						<p>
-							Recycl3R is a mobile simulation game that will help in developing
+							ReCycl3R is a mobile simulation game that will help in developing
 							awareness for waste reduction and pollution. With its inherent
 							game mechanics, the users shall be able to engage and gain more
 							knowledge about waste management as they play.
 						</p>
 						<div className='projects-card-col2-bottom'>
 							<div className='projects-card-col2-bottom-left'>
-								<Button variant='outlined'>More Details</Button>
+								<Button variant='outlined' disableRipple={true}>
+									More Details
+								</Button>
 							</div>
 							<div className='projects-card-col2-bottom-right'>
-								<Button endIcon={<ArrowForwardOutlinedIcon />}>View on</Button>
-								<img src='../../../../assets/images/Github.png' alt='Github' />
-								<img
-									src='../../../../assets/images/Youtube.png'
-									alt='Youtube'
-								/>
+								<Button
+									endIcon={<ArrowForwardOutlinedIcon />}
+									disableRipple={true}
+								>
+									View on
+								</Button>
+								<a
+									href='https://github.com/Recycler-3R/recycler-v1'
+									target='_blank'
+								>
+									<img
+										src='../../../../assets/images/Github.png'
+										alt='Github'
+									/>
+								</a>
+
+								<a href='https://youtu.be/K6d4Sy2CwAA' target='_blank'>
+									<img
+										src='../../../../assets/images/Youtube.png'
+										alt='Youtube'
+									/>
+								</a>
 							</div>
 						</div>
 					</div>
