@@ -20,7 +20,7 @@ export const projects = [
 	{
 		id: 2,
 		title: 'WhiteList',
-		image: 'Whitelist.png',
+		image: 'Whitelist.svg',
 		frame: 'Whitelist2.png',
 		subtitle: 'Modern Systems and Design Project',
 		desc: 'WhiteList is a centralized informational display hub of various rentable locations within Cebu. It was developed using React, HTML, and CSS along with Firebase as its authentication and database.',
@@ -38,7 +38,7 @@ export const projects = [
 	{
 		id: 4,
 		title: 'AltruWiz',
-		image: 'Altruwiz.png',
+		image: 'Altruwiz.svg',
 		frame: 'Altruwiz2.png',
 		subtitle: 'Software Development',
 		desc: 'AltruWiz is a mobile simulation game that will help in developing awareness for waste reduction and pollution. With its inherent game mechanics, the users shall be able to engage and gain more knowledge about waste management as they play.',

@@ -20,8 +20,7 @@ function Projects() {
 						UI/UX Designer.
 					</p>
 				</div>
-				{projects.map((data) => {
-					console.log(data);
+				{projects.map((data) => (
 					<div className='projects-card'>
 						<div className='projects-card-col1'>
 							<img
@@ -74,8 +73,8 @@ function Projects() {
 								</div>
 							</div>
 						</div>
-					</div>;
-				})}
+					</div>
+				))}
 			</>
 		</div>
 	);
