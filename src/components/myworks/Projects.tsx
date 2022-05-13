@@ -6,9 +6,9 @@ function Projects() {
 	return (
 		<>
 			<div className='projects'>
+				<div className='projects-comet'></div>
 				<div className='projects-header'>
 					<div className='projects-header-title'>
-						<div className='projects-header-title-comet'></div>
 						<h1>Projects</h1>
 					</div>
 					<p>

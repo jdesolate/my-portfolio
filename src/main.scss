@@ -20,8 +20,7 @@
 	--shadow-text: 1px 2px 0.3rem hsl(192, 96%, 28%);
 	--shadow-text2: 2px 3px 0.5rem hsl(0, 0%, 100%);
 	--shadow-shape: 0 0.3rem 0.5rem hsla(192, 100%, 36%, 0.5);
-	--font1: 'Montserrat';
-	--font2: 'Roboto';
+	--font1: 'Montserrat', sans-serif;
 }
 
 html {
@@ -40,7 +39,7 @@ p {
 }
 
 p {
-	font-family: var(--font2);
+	font-family: var(--font1);
 }
 
 h1,
@@ -61,10 +60,17 @@ img {
 	max-width: 100%;
 }
 
+.main {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	row-gap: 5rem;
+}
 //navbar
 .navbar {
 	margin: 0;
 	height: 5rem;
+	width: 100%;
 	display: flex;
 	align-items: center;
 	ul {
@@ -174,7 +180,7 @@ img {
 					width: 12em;
 					height: 3em;
 					font-weight: 700;
-					font-size: 1rem;
+					font-size: 1.1rem;
 					background-color: var(--blue);
 					color: var(--white);
 					border: 0;
@@ -189,7 +195,7 @@ img {
 					width: 12em;
 					height: 3em;
 					font-weight: 700;
-					font-size: 1rem;
+					font-size: 1.1rem;
 					background-color: transparent;
 					text-shadow: var(--shadow-text2);
 					color: var(--blue);
@@ -232,6 +238,7 @@ img {
 }
 .techStack {
 	height: 80vh;
+	padding: 0 5vw;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -270,16 +277,31 @@ img {
 }
 
 .projects {
+	margin-top: 8vh;
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	position: relative;
+	&-comet {
+		z-index: -1;
+		position: absolute;
+		width: 45.52px;
+		height: 388.24px;
+		left: 0;
+		top: 0;
+		border-radius: 50%;
+		background: var(--faded-gradient);
+		transform: matrix(-0.54, -0.79, 0.92, -0.5, 0, 0);
+	}
 	&-header {
 		width: 80%;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		margin-bottom: 5vh;
+
+		position: relative;
 		&-title {
 			align-self: flex-start;
 			h1 {
@@ -288,17 +310,6 @@ img {
 				line-height: 2.8rem;
 				margin-bottom: 5vh;
 				color: var(--dark-blue);
-			}
-			&-comet {
-				z-index: -1;
-				position: absolute;
-				width: 45.52px;
-				height: 388.24px;
-				left: 20vw;
-				top: 165vh;
-				border-radius: 50%;
-				background: var(--faded-gradient);
-				transform: matrix(-0.54, -0.79, 0.92, -0.5, 0, 0);
 			}
 		}
 		p {
