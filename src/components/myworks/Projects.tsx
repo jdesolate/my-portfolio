@@ -1,11 +1,14 @@
 import Button from '@mui/material/Button';
 import '../../main.scss';
 import ArrowForwardOutlinedIcon from '@mui/icons-material/ArrowForwardOutlined';
+import { projects } from './strings';
 
 function Projects() {
+	// const data = projects;
+
 	return (
-		<>
-			<div className='projects'>
+		<div className='projects'>
+			<>
 				<div className='projects-comet'></div>
 				<div className='projects-header'>
 					<div className='projects-header-title'>
@@ -17,67 +20,125 @@ function Projects() {
 						UI/UX Designer.
 					</p>
 				</div>
-				<div className='projects-card'>
-					<div className='projects-card-col1'>
-						<img
-							className='projects-card-col1-frame'
-							src='../../../../assets/images/Recycler2.png'
-							alt='Recycler Frame'
-						/>
-						<div className='projects-card-col1-overlay'></div>
-						<img
-							className='projects-card-col1-logo'
-							src='../../../../assets/images/Recycler.png'
-							alt='Recycler logo'
-						/>
-					</div>
-					<div className='projects-card-col2'>
-						<div className='projects-card-col2-title'>
-							<h2>ReCycl3R</h2>
-							<h3>Accenture Program the Future 2021</h3>
+				{projects.map((data) => {
+					console.log(data);
+					<div className='projects-card'>
+						<div className='projects-card-col1'>
+							<img
+								className='projects-card-col1-frame'
+								src={`../../../../assets/images/${data.frame}`}
+								alt={`${data.title} Frame`}
+							/>
+							<div className='projects-card-col1-overlay'></div>
+							<img
+								className='projects-card-col1-logo'
+								src={`../../../../assets/images/${data.image}`}
+								alt={`${data.title} Logo`}
+							/>
 						</div>
-						<p>
-							ReCycl3R is a mobile simulation game that will help in developing
-							awareness for waste reduction and pollution. With its inherent
-							game mechanics, the users shall be able to engage and gain more
-							knowledge about waste management as they play.
-						</p>
-						<div className='projects-card-col2-bottom'>
-							<div className='projects-card-col2-bottom-left'>
-								<Button variant='outlined' disableRipple={true}>
-									More Details
-								</Button>
+						<div className='projects-card-col2'>
+							<div className='projects-card-col2-title'>
+								<h2>{data.title}</h2>
+								<h3>{data.subtitle}</h3>
 							</div>
-							<div className='projects-card-col2-bottom-right'>
-								<Button
-									endIcon={<ArrowForwardOutlinedIcon />}
-									disableRipple={true}
-								>
-									View on
-								</Button>
-								<a
-									href='https://github.com/Recycler-3R/recycler-v1'
-									target='_blank'
-								>
-									<img
-										src='../../../../assets/images/Github.png'
-										alt='Github'
-									/>
-								</a>
+							<p>{data.desc}</p>
+							<div className='projects-card-col2-bottom'>
+								<div className='projects-card-col2-bottom-left'>
+									<Button variant='outlined' disableRipple={true}>
+										More Details
+									</Button>
+								</div>
+								<div className='projects-card-col2-bottom-right'>
+									<Button
+										endIcon={<ArrowForwardOutlinedIcon />}
+										disableRipple={true}
+									>
+										View on
+									</Button>
+									<a
+										href='https://github.com/Recycler-3R/recycler-v1'
+										target='_blank'
+									>
+										<img
+											src='../../../../assets/images/Github.png'
+											alt='Github'
+										/>
+									</a>
 
-								<a href='https://youtu.be/K6d4Sy2CwAA' target='_blank'>
-									<img
-										src='../../../../assets/images/Youtube.png'
-										alt='Youtube'
-									/>
-								</a>
+									<a href='https://youtu.be/K6d4Sy2CwAA' target='_blank'>
+										<img
+											src='../../../../assets/images/Youtube.png'
+											alt='Youtube'
+										/>
+									</a>
+								</div>
 							</div>
 						</div>
-					</div>
-				</div>
-			</div>
-		</>
+					</div>;
+				})}
+			</>
+		</div>
 	);
 }
 
 export default Projects;
+
+/*
+	{projects.map((data) => {
+					console.log(data);
+					<div key={data.id} className='projects-card'>
+						<div className='projects-card-col1'>
+							<img
+								className='projects-card-col1-frame'
+								src={`../../../../assets/images/${data.frame}`}
+								alt={`${data.title} Frame`}
+							/>
+							<div className='projects-card-col1-overlay'></div>
+							<img
+								className='projects-card-col1-logo'
+								src={`../../../../assets/images/${data.image}`}
+								alt={`${data.title} Logo`}
+							/>
+						</div>
+						<div className='projects-card-col2'>
+							<div className='projects-card-col2-title'>
+								<h2>{data.title}</h2>
+								<h3>{data.subtitle}</h3>
+							</div>
+							<p>{data.desc}</p>
+							<div className='projects-card-col2-bottom'>
+								<div className='projects-card-col2-bottom-left'>
+									<Button variant='outlined' disableRipple={true}>
+										More Details
+									</Button>
+								</div>
+								<div className='projects-card-col2-bottom-right'>
+									<Button
+										endIcon={<ArrowForwardOutlinedIcon />}
+										disableRipple={true}
+									>
+										View on
+									</Button>
+									<a
+										href='https://github.com/Recycler-3R/recycler-v1'
+										target='_blank'
+									>
+										<img
+											src='../../../../assets/images/Github.png'
+											alt='Github'
+										/>
+									</a>
+
+									<a href='https://youtu.be/K6d4Sy2CwAA' target='_blank'>
+										<img
+											src='../../../../assets/images/Youtube.png'
+											alt='Youtube'
+										/>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>;
+				})}
+
+*/
