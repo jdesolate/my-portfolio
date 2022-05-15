@@ -1,13 +1,6 @@
-import { useNavigate } from 'react-router-dom';
-import { useCallback } from 'react';
 import '../../main.scss';
 
 function Header() {
-	const navigate = useNavigate();
-	const handleOnClick = useCallback(
-		() => navigate('/projects', { replace: true }),
-		[navigate]
-	);
 	return (
 		<>
 			<div className='header'>

@@ -1,7 +1,7 @@
 import Button from '@mui/material/Button';
 import '../../main.scss';
 import ArrowForwardOutlinedIcon from '@mui/icons-material/ArrowForwardOutlined';
-import { projects } from './Strings';
+import { projects } from '../Strings';
 
 function Details() {
 	return (

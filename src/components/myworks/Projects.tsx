@@ -2,10 +2,16 @@ import Button from '@mui/material/Button';
 import '../../main.scss';
 import ArrowForwardOutlinedIcon from '@mui/icons-material/ArrowForwardOutlined';
 import { projects } from './Strings';
+import { useNavigate } from 'react-router-dom';
+import { useCallback, useState } from 'react';
 
 function Projects() {
-	// const data = projects;
-
+	const navigate = useNavigate();
+	const [projRoute, setProjRoute] = useState('');
+	// const handleOnClick = useCallback(
+	// 	() => navigate({`/${projRoute}`}, { replace: true }),
+	// 	[navigate]
+	// );
 	return (
 		<div className='projects' id='proj'>
 			<>
@@ -22,7 +28,12 @@ function Projects() {
 				</div>
 				{projects.map((data) => (
 					<div className='projects-card'>
-						<div className='projects-card-col1'>
+						<div
+							className='projects-card-col1'
+							onClick={() => {
+								navigate(`/${data.route}`);
+							}}
+						>
 							<img
 								className='projects-card-col1-frame'
 								src={`../../../../assets/images/${data.frame}`}
@@ -43,7 +54,13 @@ function Projects() {
 							<p>{data.desc}</p>
 							<div className='projects-card-col2-bottom'>
 								<div className='projects-card-col2-bottom-left'>
-									<Button variant='outlined' disableRipple={true}>
+									<Button
+										variant='outlined'
+										disableRipple={true}
+										onClick={() => {
+											navigate(`/${data.route}`);
+										}}
+									>
 										More Details
 									</Button>
 								</div>
@@ -54,10 +71,7 @@ function Projects() {
 									>
 										View on
 									</Button>
-									<a
-										href='https://github.com/Recycler-3R/recycler-v1'
-										target='_blank'
-									>
+									<a href={data.github} target='_blank'>
 										<img
 											src='../../../../assets/images/Github.png'
 											alt='Github'

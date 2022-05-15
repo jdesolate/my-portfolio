@@ -1,6 +1,7 @@
 export const projects = [
 	{
 		id: 0,
+		route: 'Booksynation',
 		title: 'BookSyNation',
 		image: 'Bookcine.svg',
 		frame: 'Bookcine2.png',
@@ -16,9 +17,11 @@ export const projects = [
 			'It was very satisfying to make something work from scratch. Seeing that our hard work and long hours paid off and that our project manager appreciated us made me want to keep going with this career.',
 		stack: ['Flutter.png', 'Firebase.png'],
 		viewButton: ['Github.png', 'Googledocs.png'],
+		github: 'https://github.com/Book-cine/booksynation',
 	},
 	{
 		id: 1,
+		route: 'Recycler',
 		title: 'ReCycl3R',
 		image: 'Recycler.png',
 		frame: 'Recycler2.png',
@@ -34,9 +37,11 @@ export const projects = [
 			"Overall, I'm glad I pushed myself and was able to finish what I started. Even though we weren't perfect, we were able to make it as finalists and gain valuable experience. Aside from that, what really drove me was knowing that what we were doing could help our communities and environment.",
 		stack: ['Flutter.png', 'Firebase.png'],
 		viewButton: ['Github.png', 'Youtube.png'],
+		github: 'https://github.com/Recycler-3R/recycler-v1',
 	},
 	{
 		id: 2,
+		route: 'Whitelist',
 		title: 'WhiteList',
 		image: 'Whitelist.svg',
 		frame: 'Whitelist2.png',
@@ -57,9 +62,11 @@ export const projects = [
 			'Firebase.png',
 		],
 		viewButton: ['Github.png', 'Pdf.png'],
+		github: 'https://github.com/WhiteList-Int/white-list',
 	},
 	{
 		id: 3,
+		route: 'Datagrades',
 		title: 'DataGrades',
 		image: 'Datagrades.png',
 		frame: 'Datagrades2.png',
@@ -75,9 +82,11 @@ export const projects = [
 			"By doing surveys, we were able to find out what teachers go through in schools and what problems they have with their grading workflow. We're still doing research and trying to get validation from experts to see if what we're making could really help teachers and students.",
 		stack: ['Figma.png'],
 		viewButton: ['Googledocs.png'],
+		github: '',
 	},
 	{
 		id: 4,
+		route: 'Altruwiz',
 		title: 'AltruWiz',
 		image: 'Altruwiz.svg',
 		frame: 'Altruwiz2.png',
@@ -98,5 +107,6 @@ export const projects = [
 			'Firebase.png',
 		],
 		viewButton: ['Github.png'],
+		github: 'https://github.com/AltruWiz/altruWiz',
 	},
 ];
