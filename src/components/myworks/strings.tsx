@@ -4,9 +4,18 @@ export const projects = [
 		title: 'BookSyNation',
 		image: 'Bookcine.svg',
 		frame: 'Bookcine2.png',
-		subtitle: 'Software Development 1 Project',
-		desc: 'BookSyNation is a mobile simulation game that will help in developing awareness for waste reduction and pollution. With its inherent game mechanics, the users shall be able to engage and gain more knowledge about waste management as they play.',
-		viewButton: 'two',
+		subtitle: 'Software Development 1',
+		desc: 'BookSyNation is a school project I made with a team.  It is a vaccination booking system intended for the facilitation of vaccination scheduling for the pandemic.',
+		date: 'October 2021',
+		role: 'Back-end developer, Front-end developer, UI/UX Designer (Mobile)',
+		challenge:
+			'Using Firebase for our back-end solution allowed me to explore back-end development. Making ends meet for our web and mobile application made it challenging for me since there were some functionalities that would work on mobile but not on web and vice versa. The hardest part was error handling and state management.',
+		solution:
+			'Researching and digging through Stack Overflow while undergoing trial and errors had been very helpful for me in the development phase. OOP concepts have also played a big role in handling user and admin data. Having only one month made us change our priorities in implementing Domain Driven Design and BLoC, checking states and passing contexts within the widget heirarchy have been our alternative solution to successfully deliver the web and mobile application.',
+		reflection:
+			'It was very satisfying to make something work from scratch. Seeing that our hard work and long hours paid off and that our project manager appreciated us made me want to keep going with this career.',
+		stack: ['Flutter.png', 'Firebase.png'],
+		viewButton: ['Github.png', 'Googledocs.png'],
 	},
 	{
 		id: 1,
@@ -14,34 +23,80 @@ export const projects = [
 		image: 'Recycler.png',
 		frame: 'Recycler2.png',
 		subtitle: 'Accenture Program the Future 2021',
-		desc: 'Recycl3R is a mobile simulation game that will help in developing awareness for waste reduction and pollution. With its inherent game mechanics, the users shall be able to engage and gain more knowledge about waste management as they play.',
-		viewButton: 'two',
+		desc: 'I worked with a team on the Recycl3R project for Accenture PTF 2021. It is a simulation game for Android devices that will help people learn more about reducing waste and pollution.',
+		date: 'July 2021',
+		role: 'Front-end developer, UI/UX Designer',
+		challenge:
+			'I had no experience with Flutter at all when I was thrown into the contest and put in charge of the front end. I was also taking two courses with deliverables at the same time, so it was tough to make progress and finish the MVP in one month.',
+		solution:
+			'It was a great chance to learn the Flutter framework and work with my great teammates. Researching and coding every time I could after courseworks was my approach in going through that whole month. Proposing and implementing designs to our prototype allowed me to understand and love Flutter.',
+		reflection:
+			"Overall, I'm glad I pushed myself and was able to finish what I started. Even though we weren't perfect, we were able to make it as finalists and gain valuable experience. Aside from that, what really drove me was knowing that what we were doing could help our communities and environment.",
+		stack: ['Flutter.png', 'Firebase.png'],
+		viewButton: ['Github.png', 'Youtube.png'],
 	},
 	{
 		id: 2,
 		title: 'WhiteList',
 		image: 'Whitelist.svg',
 		frame: 'Whitelist2.png',
-		subtitle: 'Modern Systems and Design Project',
+		subtitle: 'Modern Systems and Design',
 		desc: 'WhiteList is a centralized informational display hub of various rentable locations within Cebu. It was developed using React, HTML, and CSS along with Firebase as its authentication and database.',
-		viewButton: 'two',
+		role: 'Front-end developer, UI/UX Designer, Software Testing & Documentation',
+		challenge:
+			'Being in a team of 3 was difficult to fulfill all the requirements within a month. For me, I have yet to learn the front-end tech stack to be used during that time. I also had been working with ReCycl3R project during this time so it was twice as hard to pull off. ',
+		solution:
+			"The first thing I did was make good use of my time. Set priorities for each deliverable, and then stick to the plan. I learned how to help with front-end development from my teammates and from different online sources. I also helped design the app's user interface and user experience. I made some parts in SRS, and it was my job to make the project's PMP, Test, and Design documents.",
+		reflection:
+			'Working on this project was both fun and moving. As my first project with a team, we had to redesign the UI 3–4 times, implement changes, fix a lot of errors, and keep up with the deliverables. Still, we did it because we worked hard, got ideas from each other, and trusted one another.',
+		stack: [
+			'React.png',
+			'Javascript.png',
+			'Sass.png',
+			'Html.png',
+			'Firebase.png',
+		],
+		viewButton: ['Github.png', 'Pdf.png'],
 	},
 	{
 		id: 3,
 		title: 'DataGrades',
 		image: 'Datagrades.png',
 		frame: 'Datagrades2.png',
-		subtitle: 'Software Design Project',
-		desc: 'DataGrades is a mobile simulation game that will help in developing awareness for waste reduction and pollution. With its inherent game mechanics, the users shall be able to engage and gain more knowledge about waste management as they play.',
-		viewButton: 'two',
+		subtitle: 'Software Design',
+		desc: 'DataGrades is another school project I’ve made with a team. It was made to make the process of entering student grades more efficient. The application handles the management of the subject load, the input and computation of student grades, and the viewing of grades by students.',
+		date: 'November 2021',
+		role: 'UI/UX Designer (Mobile), Software Documentation',
+		challenge:
+			"Creativity and talent in any art have never been my strong points. Seeing aesthetic and well-done works online made me want to take charge of the mobile design for our app. Since we weren't supposed to implement the system, documentation was the second most important part of this project.",
+		solution:
+			'Watching design tutorials from various design specialists and applying design principles to our project made me improve my skills. My teammates and I talked about our concerns and ideas on how to make it better, especially for the people we were making it for.',
+		reflection:
+			"By doing surveys, we were able to find out what teachers go through in schools and what problems they have with their grading workflow. We're still doing research and trying to get validation from experts to see if what we're making could really help teachers and students.",
+		stack: ['Figma.png'],
+		viewButton: ['Googledocs.png'],
 	},
 	{
 		id: 4,
 		title: 'AltruWiz',
 		image: 'Altruwiz.svg',
 		frame: 'Altruwiz2.png',
-		subtitle: 'Software Development',
-		desc: 'AltruWiz is a mobile simulation game that will help in developing awareness for waste reduction and pollution. With its inherent game mechanics, the users shall be able to engage and gain more knowledge about waste management as they play.',
-		viewButton: 'two',
+		subtitle: 'Software Development 2',
+		desc: 'Altruwiz is an ongoing school project I’m currently developing with a team. It’s a website that serves as a consolidated center for community service activities and initiatives. It helps individuals and organizations to keep track of and participate in community events by exploring, creating, and promoting them.',
+		role: 'Back-end developer, UI/UX Designer',
+		challenge:
+			'Synchronizing with new team members have been difficult.  Having different schedules, tasks, and workloads increased the concerns in meeting project timelines and deliverables.',
+		solution:
+			'Knowledge sharing was the key solution we’ve done to improve our workflow. Synchronous coding and tutorials allowed all of us to understand one another and keep ourselves focused on each feature that we had implemented. Inspiring each other and being accountable to our respective tasks made us more productive in doing the project.',
+		reflection:
+			'It was great working with my team especially with a community focused project. Adding levels, achievements and quests features to organized events are some of our idealized solution to increase user engagement for this project.',
+		stack: [
+			'React.png',
+			'Typescript.png',
+			'Sass.png',
+			'Html.png',
+			'Firebase.png',
+		],
+		viewButton: ['Github.png'],
 	},
 ];

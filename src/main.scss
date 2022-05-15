@@ -324,11 +324,11 @@ img {
 		position: relative;
 		justify-content: space-evenly;
 		margin-bottom: 5vh;
+
 		&-col1 {
 			aspect-ratio: 1;
 			min-width: 400px;
 			width: 40%;
-			border-radius: 5px;
 			position: relative;
 
 			&-frame {
@@ -336,7 +336,8 @@ img {
 				z-index: -1;
 				width: 100%;
 				height: 100%;
-				object-fit: contain;
+				object-fit: cover;
+				border-radius: 10px;
 			}
 			&-overlay {
 				border-radius: 10px;
@@ -347,6 +348,7 @@ img {
 				height: 100%;
 				position: absolute;
 				background: var(--faded-gradient2);
+				transition: background 2s;
 				&:hover {
 					cursor: pointer;
 					background: var(--faded-gradient);
