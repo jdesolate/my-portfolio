@@ -1,6 +1,13 @@
+import { useNavigate } from 'react-router-dom';
+import { useCallback } from 'react';
 import '../../main.scss';
 
 function Header() {
+	const navigate = useNavigate();
+	const handleOnClick = useCallback(
+		() => navigate('/projects', { replace: true }),
+		[navigate]
+	);
 	return (
 		<>
 			<div className='header'>
@@ -30,7 +37,14 @@ function Header() {
 							</div>
 						</div>
 						<div className='header-container-col1-row'>
-							<button className='header-container-col1-row-button1'>
+							<button
+								className='header-container-col1-row-button1'
+								onClick={() =>
+									document
+										.getElementById('proj')
+										?.scrollIntoView({ behavior: 'smooth' })
+								}
+							>
 								My Works
 							</button>
 							<button className='header-container-col1-row-button2'>
