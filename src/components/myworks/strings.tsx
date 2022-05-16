@@ -1,7 +1,7 @@
 export const projects = [
 	{
 		id: 0,
-		route: 'Booksynation',
+		route: '/projects/booksynation',
 		title: 'BookSyNation',
 		image: 'Bookcine.svg',
 		frame: 'Bookcine2.png',
@@ -30,7 +30,7 @@ export const projects = [
 	},
 	{
 		id: 1,
-		route: 'Recycler',
+		route: '/projects/recycl3r',
 		title: 'ReCycl3R',
 		image: 'Recycler.png',
 		frame: 'Recycler2.png',
@@ -58,11 +58,12 @@ export const projects = [
 	},
 	{
 		id: 2,
-		route: 'Whitelist',
+		route: '/projects/whitelist',
 		title: 'WhiteList',
 		image: 'Whitelist.svg',
 		frame: 'Whitelist2.png',
 		subtitle: 'Modern Systems and Design',
+		date: 'July 2021',
 		desc: 'WhiteList is a centralized informational display hub of various rentable locations within Cebu. It was developed using React, HTML, and CSS along with Firebase as its authentication and database.',
 		role: 'Front-end developer, UI/UX Designer, Software Testing & Documentation',
 		challenge:
@@ -92,7 +93,7 @@ export const projects = [
 	},
 	{
 		id: 3,
-		route: 'Datagrades',
+		route: '/projects/datagrades',
 		title: 'DataGrades',
 		image: 'Datagrades.png',
 		frame: 'Datagrades2.png',
@@ -119,11 +120,12 @@ export const projects = [
 	},
 	{
 		id: 4,
-		route: 'Altruwiz',
+		route: '/projects/altruwiz',
 		title: 'AltruWiz',
 		image: 'Altruwiz.svg',
 		frame: 'Altruwiz2.png',
 		subtitle: 'Software Development 2',
+		date: 'Ongoing',
 		desc: 'Altruwiz is an ongoing school project I’m currently developing with a team. It’s a website that serves as a consolidated center for community service activities and initiatives. It helps individuals and organizations to keep track of and participate in community events by exploring, creating, and promoting them.',
 		role: 'Back-end developer, UI/UX Designer',
 		challenge:

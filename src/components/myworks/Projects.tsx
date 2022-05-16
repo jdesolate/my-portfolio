@@ -26,7 +26,7 @@ function Projects() {
 						<div
 							className='projects-card-col1'
 							onClick={() => {
-								navigate(`/projects/${data.route}`);
+								navigate(`${data.route}`);
 							}}
 						>
 							<img
@@ -53,7 +53,7 @@ function Projects() {
 										variant='outlined'
 										disableRipple={true}
 										onClick={() => {
-											navigate(`/projects/${data.route}`);
+											navigate(`${data.route}`);
 										}}
 									>
 										More Details
