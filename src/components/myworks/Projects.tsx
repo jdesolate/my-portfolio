@@ -1,5 +1,4 @@
 import Button from '@mui/material/Button';
-import '../../main.scss';
 import ArrowForwardOutlinedIcon from '@mui/icons-material/ArrowForwardOutlined';
 import { projects } from './Strings';
 import { useNavigate } from 'react-router-dom';
@@ -27,7 +26,7 @@ function Projects() {
 						<div
 							className='projects-card-col1'
 							onClick={() => {
-								navigate(`/${data.route}`);
+								navigate(`/projects/${data.route}`);
 							}}
 						>
 							<img
@@ -54,7 +53,7 @@ function Projects() {
 										variant='outlined'
 										disableRipple={true}
 										onClick={() => {
-											navigate(`/${data.route}`);
+											navigate(`/projects/${data.route}`);
 										}}
 									>
 										More Details
