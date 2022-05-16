@@ -22,6 +22,7 @@
 	--shadow-shape: 0 0.3rem 0.5rem hsla(192, 100%, 36%, 0.5);
 	--ff-main: 'Montserrat', sans-serif;
 	--fs-h1: clamp(38px, 5vw + 1rem, 48px);
+	--fs-h1-alt: clamp(26px, 5vw + 1rem, 34px);
 	--fs-h2: clamp(22px, 4vw + 1rem, 30px);
 	--fs-h3: clamp(14px, 3vw + 1rem, 22px);
 	--fs-p: clamp(12px, 3vw + 1rem, 20px);
@@ -87,10 +88,11 @@ img {
 	flex-direction: row;
 	align-items: center;
 	justify-content: flex-start;
+	background-color: var(--white);
 	&-ulCont {
 		width: 55vw;
 		height: 5rem;
-		padding-left: 5vw;
+		padding-left: 3vw;
 		display: flex;
 		align-items: center;
 		justify-content: flex-start;
@@ -375,7 +377,7 @@ img {
 				height: 100%;
 				position: absolute;
 				background: var(--faded-gradient2);
-				transition: background 2s;
+				// transition: background 2s;
 				&:hover {
 					cursor: pointer;
 					background: var(--faded-gradient);
@@ -386,8 +388,8 @@ img {
 				z-index: 2;
 				width: 50%;
 				height: 50%;
-				top: 50%; /* position the top  edge of the element at the middle of the parent */
-				left: 50%; /* position the left edge of the element at the middle of the parent */
+				top: 50%;
+				left: 50%;
 				transform: translate(-50%, -50%);
 				object-fit: contain;
 
@@ -462,6 +464,176 @@ img {
 						cursor: auto;
 						color: var(--dark-blue);
 					}
+				}
+			}
+		}
+	}
+}
+
+.details {
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	text-align: justify;
+	&-bg {
+		z-index: -1;
+		position: absolute;
+		height: 50vh;
+		width: 100%;
+		top: -10rem;
+		background: linear-gradient(
+			180deg,
+			rgba(40, 215, 173, 0.25) 21.88%,
+			rgba(49, 203, 214, 0.1875) 47.92%,
+			rgba(206, 252, 255, 0.025) 100%
+		);
+		border-radius: 10px;
+	}
+	&-header {
+		margin: 0 3vw;
+		padding: 3rem 5vw;
+		height: 45vh;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+		&-head {
+			padding-bottom: 3rem;
+			display: flex;
+			flex-direction: row;
+			img {
+				width: 25%;
+				object-fit: contain;
+				margin-right: 5vw;
+			}
+			h1 {
+				font-size: var(--fs-h1-alt);
+				padding-bottom: 2vh;
+			}
+			h3 {
+				margin: 0;
+				padding: 0;
+				font-size: var(--fs-h4);
+				color: var(--black);
+			}
+			h4 {
+				font-size: var(--fs-h4);
+				margin-top: 0.5rem;
+			}
+		}
+		&-body {
+			p {
+				font-size: var(--fs-p);
+				line-height: 2rem;
+			}
+		}
+	}
+	&-hero {
+		height: auto;
+		margin: 5rem 0;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		position: relative;
+		justify-content: space-evenly;
+		background: linear-gradient(
+			256.56deg,
+			rgba(83, 83, 83, 0) 14.89%,
+			rgba(0, 148, 254, 0.16) 79.85%
+		);
+		&-frame {
+			aspect-ratio: 1;
+			width: 45%;
+			min-width: 400px;
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+
+		&-circle {
+			position: absolute;
+			border-radius: 50%;
+			width: 250px;
+			height: 250px;
+			right: 2rem;
+			top: -10rem;
+
+			background: linear-gradient(
+				180deg,
+				rgba(0, 148, 254, 0.25) 0%,
+				rgba(49, 203, 214, 0.25) 56.77%,
+				rgba(206, 252, 255, 0.25) 100%
+			);
+		}
+		&-right {
+			margin: 4rem 2rem;
+			width: calc(55% - 4rem);
+			min-width: 400px;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+
+			&-divider {
+				margin: 1rem 0;
+			}
+			&-stack {
+				align-self: flex-end;
+				img {
+					width: 4rem;
+					height: 4rem;
+					object-fit: contain;
+				}
+			}
+			h2 {
+				margin: 1rem 0;
+				font-size: var(--fs-h2);
+			}
+			p {
+				margin: 1rem 0;
+				font-size: var(--fs-p);
+			}
+		}
+	}
+	&-botSection {
+		margin: 1rem 3rem 5rem 3rem;
+		padding: 0 2rem;
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		&-comet {
+			position: absolute;
+			width: 32.88px;
+			height: 510.32px;
+			left: 10rem;
+			top: -15rem;
+			border-radius: 50%;
+			background: linear-gradient(
+				180deg,
+				rgba(0, 148, 254, 0.25) -9.95%,
+				rgba(206, 252, 255, 0.25) 50.98%,
+				rgba(255, 255, 255, 0.25) 83.8%
+			);
+			transform: rotate(-121.4deg);
+		}
+		h2 {
+			margin: 2rem 0;
+			font-size: var(--fs-h2);
+		}
+		p {
+			margin: 2rem 0;
+			font-size: var(--fs-p);
+		}
+		&-buttons {
+			margin: 2rem 0;
+			align-self: flex-end;
+			button {
+				cursor: auto;
+				color: var(--dark-blue);
+				&:hover {
+					background-color: transparent;
 				}
 			}
 		}

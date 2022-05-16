@@ -1,20 +1,24 @@
 // import { useState, useEffect, useRef, useLayoutEffect } from 'react';
 // import { useNavigate, useLocation } from 'react-router-dom';
 
+import Button from '@mui/material/Button';
+import ArrowForwardOutlinedIcon from '@mui/icons-material/ArrowForwardOutlined';
+
 function Details() {
 	return (
 		<>
-			<div className='projDetails'>
-				<div className='projDetails-header'>
-					<div className='projDetails-header-head'>
-						<img src='../../../../assets/images/Bookcine.png' alt='' />
-						<div className='projDetails-header-head-title'>
-							<h2>BookSyNation</h2>
+			<div className='details'>
+				<div className='details-bg' />
+				<div className='details-header'>
+					<div className='details-header-head'>
+						<img src='../../../../assets/images/Bookcine.svg' alt='' />
+						<div className='details-header-head-title'>
+							<h1>BookSyNation</h1>
 							<h3>Software Development 1</h3>
 							<h4>October 2021</h4>
 						</div>
 					</div>
-					<div className='projDetails-header-body'>
+					<div className='details-header-body'>
 						<p>
 							BookSyNation is a school project I made with a team. It is a
 							vaccination booking system intended for the facilitation of
@@ -22,14 +26,17 @@ function Details() {
 						</p>
 					</div>
 				</div>
-				<div className='projDetails-hero'>
-					<div className='projDetails-hero-circle'></div>
-					<img src='../../../../assets/images/Bookcine2.png' alt='' />
-					<div className='projDetails-hero-right'>
+				<div className='details-hero'>
+					<div className='details-hero-circle'></div>
+					<div className='details-hero-frame'>
+						<img src='../../../../assets/images/Bookcine2.png' alt='' />
+					</div>
+					<div className='details-hero-right'>
 						<h2>My Role</h2>
 						<p>
 							Back-end developer, Front-end developer, UI/UX Designer (Mobile)
 						</p>
+						<div className='details-hero-right-divider'></div>
 						<h2>Challenge</h2>
 						<p>
 							Using Firebase for our back-end solution allowed me to explore
@@ -38,13 +45,14 @@ function Details() {
 							functionalities that would work on mobile but not on web and vice
 							versa. The hardest part was error handling and state management.
 						</p>
-						<div className='projDetails-hero-right-stack'>
+						<div className='details-hero-right-divider'></div>
+						<div className='details-hero-right-stack'>
 							<img src='../../../../assets/images/Firebase.png' alt='' />
 						</div>
 					</div>
 				</div>
-				<div className='projDetails-botSection'>
-					<div className='projDetails-hero-comet'></div>
+				<div className='details-botSection'>
+					<div className='details-botSection-comet'></div>
 					<h2>Solution</h2>
 					<p>
 						Researching and digging through Stack Overflow while undergoing
@@ -62,6 +70,11 @@ function Details() {
 						that our hard work and long hours paid off and that our project
 						manager appreciated us made me want to keep going with this career.
 					</p>
+					<div className='details-botSection-buttons'>
+						<Button endIcon={<ArrowForwardOutlinedIcon />} disableRipple={true}>
+							View on
+						</Button>
+					</div>
 				</div>
 			</div>
 			{/* <Footer /> */}
@@ -89,5 +102,5 @@ const projPages = [
 		setIndex(projPages.indexOf(location.pathname));
 	}, [location]);
 
-	return <div className='projDetails-body'>{projPages[index]}</div>;
+	return <div className='details-body'>{projPages[index]}</div>;
 */
