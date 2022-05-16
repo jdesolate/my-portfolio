@@ -3,15 +3,11 @@ import '../../main.scss';
 import ArrowForwardOutlinedIcon from '@mui/icons-material/ArrowForwardOutlined';
 import { projects } from './Strings';
 import { useNavigate } from 'react-router-dom';
-import { useCallback, useState } from 'react';
+import viewButtons from './viewButtons';
 
 function Projects() {
 	const navigate = useNavigate();
-	const [projRoute, setProjRoute] = useState('');
-	// const handleOnClick = useCallback(
-	// 	() => navigate({`/${projRoute}`}, { replace: true }),
-	// 	[navigate]
-	// );
+
 	return (
 		<div className='projects' id='proj'>
 			<>
@@ -65,25 +61,38 @@ function Projects() {
 									</Button>
 								</div>
 								<div className='projects-card-col2-bottom-right'>
-									<Button
-										endIcon={<ArrowForwardOutlinedIcon />}
-										disableRipple={true}
-									>
-										View on
-									</Button>
-									<a href={data.github} target='_blank'>
-										<img
-											src='../../../../assets/images/Github.png'
-											alt='Github'
-										/>
-									</a>
-
-									<a href='https://youtu.be/K6d4Sy2CwAA' target='_blank'>
-										<img
-											src='../../../../assets/images/Youtube.png'
-											alt='Youtube'
-										/>
-									</a>
+									<>
+										<Button
+											endIcon={<ArrowForwardOutlinedIcon />}
+											disableRipple={true}
+										>
+											View on
+										</Button>
+										{data.viewButton.github
+											? viewButtons(
+													data.viewButton.githubLink,
+													data.viewButton.githubPath
+											  )
+											: null}
+										{data.viewButton.gdoc
+											? viewButtons(
+													data.viewButton.gdocLink,
+													data.viewButton.gdocPath
+											  )
+											: null}
+										{data.viewButton.yt
+											? viewButtons(
+													data.viewButton.ytLink,
+													data.viewButton.ytPath
+											  )
+											: null}
+										{data.viewButton.pdf
+											? viewButtons(
+													data.viewButton.pdfLink,
+													data.viewButton.pdfPath
+											  )
+											: null}
+									</>
 								</div>
 							</div>
 						</div>
@@ -95,3 +104,7 @@ function Projects() {
 }
 
 export default Projects;
+
+/*
+
+*/

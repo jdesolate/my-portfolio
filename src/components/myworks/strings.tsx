@@ -16,8 +16,17 @@ export const projects = [
 		reflection:
 			'It was very satisfying to make something work from scratch. Seeing that our hard work and long hours paid off and that our project manager appreciated us made me want to keep going with this career.',
 		stack: ['Flutter.png', 'Firebase.png'],
-		viewButton: ['Github.png', 'Googledocs.png'],
-		github: 'https://github.com/Book-cine/booksynation',
+		viewButton: {
+			github: true,
+			gdoc: true,
+			yt: false,
+			pdf: false,
+			gdocLink:
+				'https://docs.google.com/document/d/1OJl-SOKKxXE1OlMbFmvfqLnRMilz8VrpuB8xSQ8FQck/edit?usp=sharing',
+			githubLink: 'https://github.com/Book-cine/booksynation',
+			githubPath: 'Github.png',
+			gdocPath: 'Googledocs.png',
+		},
 	},
 	{
 		id: 1,
@@ -36,8 +45,16 @@ export const projects = [
 		reflection:
 			"Overall, I'm glad I pushed myself and was able to finish what I started. Even though we weren't perfect, we were able to make it as finalists and gain valuable experience. Aside from that, what really drove me was knowing that what we were doing could help our communities and environment.",
 		stack: ['Flutter.png', 'Firebase.png'],
-		viewButton: ['Github.png', 'Youtube.png'],
-		github: 'https://github.com/Recycler-3R/recycler-v1',
+		viewButton: {
+			github: true,
+			gdoc: false,
+			yt: true,
+			pdf: false,
+			ytLink: 'https://youtu.be/K6d4Sy2CwAA',
+			githubLink: 'https://github.com/Recycler-3R/recycler-v1',
+			githubPath: 'Github.png',
+			ytPath: 'Youtube.png',
+		},
 	},
 	{
 		id: 2,
@@ -61,8 +78,17 @@ export const projects = [
 			'Html.png',
 			'Firebase.png',
 		],
-		viewButton: ['Github.png', 'Pdf.png'],
-		github: 'https://github.com/WhiteList-Int/white-list',
+		viewButton: {
+			github: true,
+			gdoc: false,
+			yt: false,
+			pdf: true,
+			pdfLink:
+				'https://drive.google.com/file/d/1RqGArqOhWDulmETL1pum-rhcKKXy9Xv-/view?usp=sharing',
+			githubLink: 'https://github.com/WhiteList-Int/white-list',
+			githubPath: 'Github.png',
+			pdfPath: 'Pdf.png',
+		},
 	},
 	{
 		id: 3,
@@ -81,8 +107,15 @@ export const projects = [
 		reflection:
 			"By doing surveys, we were able to find out what teachers go through in schools and what problems they have with their grading workflow. We're still doing research and trying to get validation from experts to see if what we're making could really help teachers and students.",
 		stack: ['Figma.png'],
-		viewButton: ['Googledocs.png'],
-		github: '',
+		viewButton: {
+			github: false,
+			gdoc: true,
+			yt: false,
+			pdf: false,
+			gdocLink:
+				'https://docs.google.com/document/d/1OJl-SOKKxXE1OlMbFmvfqLnRMilz8VrpuB8xSQ8FQck/edit?usp=sharing',
+			gdocPath: 'Googledocs.png',
+		},
 	},
 	{
 		id: 4,
@@ -106,7 +139,13 @@ export const projects = [
 			'Html.png',
 			'Firebase.png',
 		],
-		viewButton: ['Github.png'],
-		github: 'https://github.com/AltruWiz/altruWiz',
+		viewButton: {
+			github: true,
+			gdoc: false,
+			yt: false,
+			pdf: false,
+			githubLink: 'https://github.com/AltruWiz/altruWiz',
+			githubPath: 'Github.png',
+		},
 	},
 ];
