@@ -64,7 +64,7 @@ export const projects = [
 		frame: 'Whitelist2.png',
 		subtitle: 'Modern Systems and Design',
 		date: 'July 2021',
-		desc: 'WhiteList is a centralized informational display hub of various rentable locations within Cebu. It was developed using React, HTML, and CSS along with Firebase as its authentication and database.',
+		desc: 'WhiteList is a school project I made with two other teammates. It is a centralized informational display hub of various rentable locations within Cebu. It provides its users with a simplified method for finding and connecting people to rentable opportunities.',
 		role: 'Front-end developer, UI/UX Designer, Software Testing & Documentation',
 		challenge:
 			'Being in a team of 3 was difficult to fulfill all the requirements within a month. For me, I have yet to learn the front-end tech stack to be used during that time. I also had been working with ReCycl3R project during this time so it was twice as hard to pull off. ',
