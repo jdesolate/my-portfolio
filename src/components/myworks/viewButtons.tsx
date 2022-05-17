@@ -1,5 +1,3 @@
-import React from 'react';
-
 function viewButtons(refLink?: string, refPath?: string) {
 	return (
 		<a href={refLink} target='_blank'>

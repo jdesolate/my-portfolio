@@ -11,7 +11,7 @@ import Recycler from './components/myworks/details/Recycler';
 import Whitelist from './components/myworks/details/Whitelist';
 import Datagrades from './components/myworks/details/Datagrades';
 import Altruwiz from './components/myworks/details/Altruwiz';
-import Details from './components/myworks/details/Details';
+import Footer from './components/navbar/Footer';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
 	<React.StrictMode>
@@ -21,7 +21,6 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 				<Route path='/' element={<Home />} />
 				<Route path='/about' element={<About />} />
 				<Route path='/projects' element={<Projects />} />
-				<Route path='/details' element={<Details />} />
 				<Route path='/projects/booksynation' element={<Booksynation />} />
 				<Route path='/projects/recycl3r' element={<Recycler />} />
 				<Route path='/projects/whitelist' element={<Whitelist />} />
@@ -29,6 +28,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 				<Route path='/projects/altruwiz' element={<Altruwiz />} />
 				<Route path='*' element={<Error />} />
 			</Routes>
+			<Footer />
 		</Router>
 	</React.StrictMode>
 );
