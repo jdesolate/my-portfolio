@@ -1,6 +1,15 @@
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 function Footer() {
+	const location = useLocation();
+
+	useEffect(() => {
+		const div = document.querySelector('html');
+		div?.scrollTo(0, 0);
+	}, [location]);
+
 	return (
 		<footer className='footer'>
 			<div className='footer-footcontent'>

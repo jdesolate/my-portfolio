@@ -3,10 +3,18 @@ import ArrowForwardOutlinedIcon from '@mui/icons-material/ArrowForwardOutlined';
 import { projects } from '../Strings';
 import viewButtons from '../viewButtons';
 import Stack from './Stack';
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 function Whitelist() {
 	const data = projects[2];
 
+	const location = useLocation();
+
+	useEffect(() => {
+		const div = document.querySelector('html');
+		div?.scrollTo(0, 0);
+	}, [location]);
 	return (
 		<>
 			<div className='details'>

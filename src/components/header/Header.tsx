@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import '../../main.scss';
 
 function Header() {
@@ -40,9 +41,11 @@ function Header() {
 							>
 								My Works
 							</button>
-							<button className='header-container-col1-row-button2'>
-								Contact Me
-							</button>
+							<Link to='/about'>
+								<button className='header-container-col1-row-button2'>
+									Contact Me
+								</button>
+							</Link>
 						</div>
 					</div>
 					<div className='header-container-circle'></div>

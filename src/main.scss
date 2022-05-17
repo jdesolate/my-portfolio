@@ -31,7 +31,7 @@
 	);
 	--whitelist: linear-gradient(
 		180deg,
-		rgba(228, 228, 228, 0.25) 0%,
+		rgba(49, 49, 49, 0.25) 0%,
 		rgba(49, 203, 214, 0.1875) 44.27%,
 		rgba(206, 252, 255, 0.15) 100%,
 		rgba(206, 252, 255, 0.025) 100%
@@ -155,6 +155,89 @@ img {
 			&:hover {
 				cursor: pointer;
 				filter: drop-shadow(0 0 0.2rem var(--blue));
+			}
+		}
+	}
+}
+
+.footer {
+	height: 8rem;
+	padding: 1rem 2rem 0 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	border-top: 1px solid rgba(157, 249, 255, 0.25);
+	box-shadow: drop-shadow(0px -4px 7px rgba(157, 249, 255, 0.25));
+
+	&-footcontent {
+		width: 100%;
+		height: 95%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		&-top {
+			width: 90%;
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			&-left {
+				width: 60%;
+				height: 100%;
+				display: flex;
+				flex-direction: row;
+
+				justify-content: center;
+				img {
+					align-self: flex-start;
+					width: 5rem;
+					height: 5rem;
+					object-fit: contain;
+					&:hover {
+						cursor: pointer;
+						filter: drop-shadow(0 0 0.2rem var(--blue));
+					}
+				}
+			}
+
+			&-right {
+				width: 40%;
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				justify-content: space-evenly;
+				img {
+					width: 3rem;
+					height: 3rem;
+					object-fit: contain;
+					&:hover {
+						cursor: pointer;
+						filter: drop-shadow(0 0 0.2rem var(--blue));
+					}
+				}
+			}
+			@media (max-width: 720px) {
+				&-left {
+					width: 40%;
+					img {
+						width: 4rem;
+						height: 4rem;
+					}
+				}
+				&-right {
+					width: 60%;
+					img {
+						width: 2.5rem;
+						height: 2.5rem;
+					}
+				}
+			}
+		}
+		&-bot {
+			margin-top: 1rem;
+			p {
+				font-size: 12px;
+				color: grey;
 			}
 		}
 	}
@@ -571,6 +654,7 @@ img {
 		align-items: flex-start;
 		justify-content: center;
 		&-head {
+			width: 80%;
 			padding-bottom: 3rem;
 			display: flex;
 			flex-direction: row;
@@ -579,20 +663,25 @@ img {
 				object-fit: contain;
 				margin-right: 5vw;
 			}
-			h1 {
-				font-size: var(--fs-h1-alt);
-				padding-bottom: 2vh;
-			}
-			h3 {
-				margin: 0;
-				padding: 0;
-				font-size: var(--fs-h4);
-				color: var(--black);
-			}
-			h4 {
-				font-size: var(--fs-h4);
-				font-weight: 500;
-				margin-top: 0.5rem;
+			&-title {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				h1 {
+					font-size: var(--fs-h1);
+					padding-bottom: 2vh;
+				}
+				h3 {
+					margin: 0;
+					padding: 0;
+					font-size: var(--fs-h4);
+					color: var(--black);
+				}
+				h4 {
+					font-size: var(--fs-h4);
+					font-weight: 500;
+					margin-top: 0.5rem;
+				}
 			}
 		}
 		&-body {
@@ -745,71 +834,6 @@ img {
 				&:hover {
 					background-color: transparent;
 				}
-			}
-		}
-	}
-}
-
-.footer {
-	height: 8rem;
-	padding: 1rem 2rem 0 2rem;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	border-top: 1px solid rgba(157, 249, 255, 0.25);
-	box-shadow: drop-shadow(0px -4px 7px rgba(157, 249, 255, 0.25));
-
-	&-footcontent {
-		width: 100%;
-		height: 95%;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		&-top {
-			width: 90%;
-			display: flex;
-			flex-direction: row;
-			justify-content: center;
-			&-left {
-				width: 60%;
-				height: 100%;
-				display: flex;
-				flex-direction: row;
-
-				justify-content: center;
-				img {
-					align-self: flex-start;
-					width: 5rem;
-					height: 5rem;
-					object-fit: contain;
-					&:hover {
-						cursor: pointer;
-						filter: drop-shadow(0 0 0.2rem var(--blue));
-					}
-				}
-			}
-			&-right {
-				width: 40%;
-				display: flex;
-				flex-direction: row;
-				align-items: center;
-				justify-content: space-evenly;
-				img {
-					width: 3rem;
-					height: 3rem;
-					object-fit: contain;
-					&:hover {
-						cursor: pointer;
-						filter: drop-shadow(0 0 0.2rem var(--blue));
-					}
-				}
-			}
-		}
-		&-bot {
-			margin-top: 1rem;
-			p {
-				font-size: 12px;
 			}
 		}
 	}
