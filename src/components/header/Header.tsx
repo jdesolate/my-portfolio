@@ -5,7 +5,10 @@ function Header() {
 	return (
 		<>
 			<div className='header'>
+				<div className='header-bg' />
 				<div className='header-container'>
+					<div className='header-container-circle'></div>
+					<div className='header-container-comet'></div>
 					<div className='header-container-col1'>
 						<div className='header-container-col1-top'>
 							<div className='header-container-col1-top-textcont'>
@@ -41,15 +44,12 @@ function Header() {
 							>
 								My Works
 							</button>
-							<Link to='/about'>
-								<button className='header-container-col1-row-button2'>
-									Contact Me
-								</button>
-							</Link>
+
+							<button className='header-container-col1-row-button2'>
+								<Link to='/about'>Contact Me</Link>
+							</button>
 						</div>
 					</div>
-					<div className='header-container-circle'></div>
-					<div className='header-container-comet'></div>
 				</div>
 			</div>
 		</>

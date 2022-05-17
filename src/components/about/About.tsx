@@ -3,9 +3,10 @@ import Contact from './Contact';
 
 function About() {
 	return (
-		<div>
+		<>
+			<div className='about'></div>
 			<Contact />
-		</div>
+		</>
 	);
 }
 
