@@ -1,14 +1,23 @@
 import { motion } from 'framer-motion';
 import Contact from './Contact';
 import Typewriter from 'typewriter-effect';
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 function About() {
+	const location = useLocation();
+
 	return (
 		<>
 			<div className='about'>
 				<div className='header-bg' />
 				<div className='about-title'>
-					<div className='about-title-comet'></div>
+					<motion.div
+						className='about-title-comet'
+						initial={{ top: '-20rem', left: '30rem', opacity: 0 }}
+						animate={{ left: '10rem', top: '2rem ', opacity: 0.5 }}
+						transition={{ delay: 0.2, type: 'tween', duration: 0.8 }}
+					></motion.div>
 					<h1>About Me</h1>
 				</div>
 				<div className='about-desc1'>
@@ -17,37 +26,42 @@ function About() {
 							options={{ loop: true }}
 							onInit={(typewriter) => {
 								typewriter
-									.changeDelay(15)
+									.changeDelay(2)
 									.typeString(
 										'I’m currently a 3rd year Computer Engineering student in Cebu Institute of Technology - University.'
 									)
 									.pauseFor(2000)
-									.deleteAll(5)
+									.deleteAll(2)
 									.typeString(
-										'I started learning programming during my 1st year in college.'
+										' I started learning programming during my 1st year in college.'
 									)
 									.pauseFor(2000)
-									.deleteAll(5)
+									.deleteAll(2)
 									.typeString(
-										'As hard as it was, I fell in love with it in no time.'
+										' As hard as it was, I fell in love with it in no time.'
 									)
 									.pauseFor(2000)
-									.deleteAll(5)
+									.deleteAll(2)
 									.start();
 							}}
 						/>
 					</h2>
 				</div>
-				<div className='about-desc2'>
+				<motion.div
+					className='about-desc2'
+					initial={{ top: -1000, left: 1000 }}
+					animate={{ top: 0, left: 0 }}
+					transition={{ delay: 5, type: 'tween', duration: 2 }}
+				>
 					<div className='about-desc2-comet'></div>
 					<h2>
 						Solving problems, being in different teams, delivering works, and
 						accomplishing goals drives my passion in this field.
 					</h2>
-				</div>
+				</motion.div>
 				<div className='about-hero'>
 					<div className='about-hero-image'>
-						<img src='../../../assets/images/Mervin.png' alt='Mervin' />
+						<img src='../../../assets/images/Mervin2.png' alt='Mervin' />
 					</div>
 					<div className='about-hero-right'>
 						<div className='about-hero-right-top'>

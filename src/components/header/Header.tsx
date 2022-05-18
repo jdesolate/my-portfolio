@@ -2,6 +2,12 @@ import { Link } from 'react-router-dom';
 import '../../main.scss';
 
 function Header() {
+	const handleClick = () => {
+		setTimeout(() => {
+			const div = document.querySelector('#contact-me');
+			div?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+		}, 500);
+	};
 	return (
 		<>
 			<div className='header'>
@@ -46,7 +52,9 @@ function Header() {
 							</button>
 
 							<button className='header-container-col1-row-button2'>
-								<Link to='/about'>Contact Me</Link>
+								<Link to='/about' onClick={handleClick}>
+									Contact Me
+								</Link>
 							</button>
 						</div>
 					</div>

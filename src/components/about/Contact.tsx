@@ -15,7 +15,7 @@ function Contact() {
 	const contNum = '+639 0898 59996';
 
 	return (
-		<div className='contact'>
+		<div className='contact' id='contact-me'>
 			<h3>Feel free to contact me through:</h3>
 			<div className='contact-cont'>
 				<div className='contact-cont-row'>
