@@ -91,6 +91,12 @@ function Projects() {
 													data.viewButton.pdfPath
 											  )
 											: null}
+										{data.viewButton.app
+											? viewButtons(
+													data.viewButton.appLink,
+													data.viewButton.appPath
+											  )
+											: null}
 									</>
 								</div>
 							</div>

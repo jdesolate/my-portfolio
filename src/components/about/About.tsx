@@ -1,21 +1,42 @@
 import { motion } from 'framer-motion';
 import Contact from './Contact';
+import Typewriter from 'typewriter-effect';
 
 function About() {
 	return (
 		<>
 			<div className='about'>
+				<div className='header-bg' />
 				<div className='about-title'>
 					<div className='about-title-comet'></div>
 					<h1>About Me</h1>
 				</div>
 				<div className='about-desc1'>
-					<p>
-						I’m currently a 3rd year Computer Engineering student in Cebu
-						Institute of Technology - University.
-					</p>
-					<p>I started learning programming during my 1st year in college.</p>
-					<p>As hard as it was, I fell in love with it in no time.</p>
+					<h2>
+						<Typewriter
+							options={{ loop: true }}
+							onInit={(typewriter) => {
+								typewriter
+									.changeDelay(15)
+									.typeString(
+										'I’m currently a 3rd year Computer Engineering student in Cebu Institute of Technology - University.'
+									)
+									.pauseFor(2000)
+									.deleteAll(5)
+									.typeString(
+										'I started learning programming during my 1st year in college.'
+									)
+									.pauseFor(2000)
+									.deleteAll(5)
+									.typeString(
+										'As hard as it was, I fell in love with it in no time.'
+									)
+									.pauseFor(2000)
+									.deleteAll(5)
+									.start();
+							}}
+						/>
+					</h2>
 				</div>
 				<div className='about-desc2'>
 					<div className='about-desc2-comet'></div>
