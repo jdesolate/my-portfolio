@@ -9,7 +9,7 @@ function About() {
 		<>
 			<Navbar />
 			<div className='about'>
-				<div className='header-bg' />
+				<div className='about-bg' />
 				<div className='about-title'>
 					<motion.div
 						className='about-title-comet'

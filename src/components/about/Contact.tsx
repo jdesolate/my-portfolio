@@ -2,8 +2,7 @@ import Button from '@mui/material/Button';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import LocalPhoneOutlinedIcon from '@mui/icons-material/LocalPhoneOutlined';
 import { useState } from 'react';
-import CheckCircleOutlineOutlinedIcon from '@mui/icons-material/CheckCircleOutlineOutlined';
-
+import ContentPasteOutlinedIcon from '@mui/icons-material/ContentPasteOutlined';
 function copyToClip(text: any) {
 	navigator.clipboard.writeText(text);
 }
@@ -32,8 +31,7 @@ function Contact() {
 					</Button>
 					{copiedEmail ? (
 						<div className='contact-cont-row-pop'>
-							<p>Copied</p>
-							<CheckCircleOutlineOutlinedIcon color='primary' />
+							<ContentPasteOutlinedIcon color='primary' />
 						</div>
 					) : null}
 				</div>
@@ -51,8 +49,7 @@ function Contact() {
 					</Button>
 					{copiedNum ? (
 						<div className='contact-cont-row-pop'>
-							<p>Copied</p>
-							<CheckCircleOutlineOutlinedIcon color='primary' />
+							<ContentPasteOutlinedIcon color='primary' />
 						</div>
 					) : null}
 				</div>

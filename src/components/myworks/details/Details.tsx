@@ -105,8 +105,8 @@ export function Details(proj: string) {
 							: null}
 					</div>
 				</div>
+				<Footer />
 			</div>
-			<Footer />
 		</>
 	);
 }
