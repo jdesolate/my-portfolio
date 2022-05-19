@@ -26,11 +26,7 @@ function Projects() {
 					{projects.map((data) => (
 						<motion.div
 							className='projects-card'
-							whileHover={{ scale: 1.05 }}
-							whileTap={{
-								scale: 0.8,
-								borderRadius: '100%',
-							}}
+							whileHover={{ scale: 1.025 }}
 							transition={{ duration: 0.2, type: 'tween' }}
 						>
 							<div

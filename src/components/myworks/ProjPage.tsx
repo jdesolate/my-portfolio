@@ -5,7 +5,7 @@ import Projects from './Projects';
 
 function ProjPage() {
 	return (
-		<div>
+		<div className='projPage'>
 			<Navbar />
 			<Projects />
 			<Footer />
