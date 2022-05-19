@@ -119,7 +119,7 @@ img {
 }
 //navbar
 .navbar {
-	border: 1px solid red;
+	// border: 1px solid red;
 	z-index: 99;
 	margin-bottom: 5vh;
 	width: calc(100% - 0.125rem);
@@ -181,7 +181,7 @@ img {
 	}
 }
 .footer {
-	border: 1px solid red;
+	// border: 1px solid red;
 	width: calc(100% - 4.2rem);
 	height: 8rem;
 	padding: 1rem 2rem 0 2rem;
@@ -1084,7 +1084,7 @@ img {
 	}
 }
 .about {
-	border: 1px solid red;
+	// border: 1px solid red;
 	margin-top: 5rem;
 	width: calc(100% - 0.2rem);
 	display: flex;
@@ -1101,7 +1101,7 @@ img {
 		background: var(--main);
 	}
 	&-title {
-		border: 1px solid red;
+		// border: 1px solid red;
 		padding: 2rem 3rem 5rem 3rem;
 		&-comet {
 			position: absolute;
@@ -1116,7 +1116,7 @@ img {
 		}
 	}
 	&-desc1 {
-		border: 1px solid red;
+		// border: 1px solid red;
 		align-self: center;
 		display: flex;
 		flex-direction: column;
@@ -1152,7 +1152,7 @@ img {
 		}
 	}
 	&-desc2 {
-		border: 1px solid red;
+		// border: 1px solid red;
 		height: 50vh;
 		min-width: 320px;
 		display: flex;
@@ -1161,7 +1161,7 @@ img {
 		position: relative;
 		align-self: center;
 		&-circle {
-			border: 1px solid red;
+			// border: 1px solid red;
 			position: absolute;
 			z-index: -1;
 			width: 600px;
@@ -1228,7 +1228,7 @@ img {
 		}
 	}
 	&-hero {
-		border: 1px solid red;
+		// border: 1px solid red;
 		margin: 8rem 0 0 0;
 		display: flex;
 		flex-direction: row;
@@ -1252,7 +1252,7 @@ img {
 		}
 
 		&-right {
-			border: 1px solid red;
+			// border: 1px solid red;
 			width: calc(55% - 1rem);
 			min-width: 320px;
 			display: flex;
@@ -1415,7 +1415,7 @@ img {
 }
 
 .contact {
-	border: 1px solid red;
+	// border: 1px solid red;
 	display: flex;
 	width: min(90%, 70.5rem);
 	flex-direction: column;
