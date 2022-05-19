@@ -413,15 +413,19 @@ img {
 			}
 
 			&-row {
+				align-self: center;
 				display: flex;
 				flex-direction: row;
 				justify-content: space-evenly;
+				flex-wrap: wrap;
 				width: 100%;
 				&-button1 {
+					margin: 1rem 0;
 					font-weight: 600;
-					width: 15rem;
+					width: 40%;
+					min-width: 12rem;
 					height: 3em;
-					font-size: clamp(1rem, 2vw + 1rem, 1.3rem);
+					font-size: var(--fs-h3);
 					background-color: var(--blue);
 					color: var(--white);
 					border: 0;
@@ -431,22 +435,43 @@ img {
 						filter: drop-shadow(0 0 0.2rem var(--blue));
 					}
 				}
+				a {
+					width: 40%;
+					text-decoration: none;
+				}
 				&-button2 {
-					margin-left: 1rem;
+					margin: 1rem 0;
+					color: var(--cyan);
+					border: 1px solid var(--cyan);
+					text-decoration: none;
 					font-weight: 600;
-					width: 15rem;
+					width: 100%;
+					min-width: 12rem;
 					height: 3em;
-					font-size: clamp(1rem, 2vw + 1rem, 1.3rem);
+					font-size: var(--fs-h3);
 					background-color: transparent;
-					border: 0;
 					border-radius: 10px;
 					cursor: pointer;
+					&:hover {
+						color: var(--blue);
+						border: 1px solid var(--blue);
+					}
+				}
+			}
+			@media (max-width: 520px) {
+				&-row {
+					&-button1 {
+						font-weight: 600;
+						font-size: var(--fs-h4);
+					}
 					a {
-						color: var(--dark-blue);
-						text-decoration: none;
-						&:hover {
-							color: var(--blue);
-						}
+						width: 40%;
+						min-width: 12rem;
+					}
+					&-button2 {
+						font-weight: 600;
+						width: 100%;
+						font-size: var(--fs-h4);
 					}
 				}
 			}
@@ -461,8 +486,8 @@ img {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	margin-top: 5vh;
-	margin-bottom: 5vh;
+	margin: 0 0 8rem 0;
+
 	&-cont1 {
 		display: flex;
 		flex-direction: column;
@@ -497,11 +522,10 @@ img {
 .projects {
 	padding: 5vh 5vw;
 	height: auto;
-	width: 85%;
+	width: min(90%, 70.5rem);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-
 	position: relative;
 	&-comet {
 		z-index: -1;
@@ -541,41 +565,50 @@ img {
 
 	&-card {
 		display: flex;
+		padding: 2vh;
 		flex-direction: row;
 		flex-wrap: wrap;
-		width: 100%;
+		width: min(90%, 70.5rem);
+		border-radius: 5px;
+		min-width: 300px;
 		position: relative;
 		justify-content: space-evenly;
 		margin-bottom: 5vh;
+		border: 1px solid rgba(173, 172, 172, 0.236);
+		box-shadow: 0 0.3rem 5rem rgba(173, 172, 172, 0.096);
+		background-color: var(--white);
 
 		&-col1 {
 			aspect-ratio: 1;
-			min-width: 400px;
-			width: 40%;
+			min-width: 300px;
+			width: calc(50% - 2rem);
 			position: relative;
 
 			&-frame {
 				position: relative;
-				z-index: -1;
-				width: 100%;
-				height: 100%;
-				object-fit: cover;
-				border-radius: 10px;
-			}
-			&-overlay {
-				border-radius: 10px;
-				top: 0;
-				right: 0;
 				z-index: 1;
 				width: 100%;
 				height: 100%;
-				position: absolute;
-				background: var(--faded-gradient2);
+				object-fit: cover;
+				border-radius: 5px;
 				&:hover {
 					cursor: pointer;
-					background: var(--faded-gradient);
 				}
 			}
+			// &-overlay {
+			// 	border-radius: 5px;
+			// 	top: 0;
+			// 	right: 0;
+			// 	z-index: 1;
+			// 	width: 100%;
+			// 	height: 100%;
+			// 	position: absolute;
+			// 	// background: var(--faded-gradient2);
+			// 	&:hover {
+			// 		cursor: pointer;
+			// 		background: var(--faded-gradient);
+			// 	}
+			// }
 			&-logo {
 				position: absolute;
 				z-index: 2;
@@ -593,8 +626,8 @@ img {
 		}
 		&-col2 {
 			width: calc(60% - 10rem);
-			min-width: 400px;
-			padding: 5vh 5vw;
+			min-width: 300px;
+			margin: 3rem 2rem;
 			&-title {
 				margin-bottom: 5vh;
 				h2 {
@@ -613,7 +646,7 @@ img {
 				font-size: var(--fs-p);
 				text-align: justify;
 				color: var(--black);
-				margin-bottom: 10vh;
+				margin-bottom: 2rem;
 			}
 			&-bottom {
 				display: flex;
@@ -623,8 +656,8 @@ img {
 				justify-content: space-between;
 				button {
 					font-family: 'Montserrat';
-					font-weight: 600;
-					font-size: clamp(5px, 0.5vw + 1rem, 24px);
+					font-weight: 500;
+					font-size: var(--fs-p);
 					border: none;
 					padding: 0;
 					text-transform: none;
@@ -647,10 +680,10 @@ img {
 					flex-direction: row;
 					justify-content: space-between;
 					img {
-						height: 3rem;
+						height: 2.8rem;
 						object-fit: contain;
 						&:hover {
-							height: 3.2rem;
+							height: 3rem;
 							cursor: pointer;
 							filter: drop-shadow(0 0 0.2rem var(--blue));
 						}
@@ -660,6 +693,63 @@ img {
 						color: var(--dark-blue);
 					}
 				}
+			}
+			@media (max-width: 520px) {
+				&-title {
+					margin-bottom: 2vh;
+					h2 {
+						margin: 0 1rem;
+						font-size: var(--fs-h3);
+					}
+					h3 {
+						margin: 0 1rem;
+						font-size: var(--fs-h4);
+					}
+				}
+				p {
+					margin: 0 1rem;
+					font-weight: 400;
+					font-size: var(--fs-h4);
+				}
+				&-bottom {
+					height: 2rem;
+					margin: 1rem;
+					justify-content: space-evenly;
+					button {
+						font-family: 'Montserrat';
+						font-weight: 400;
+						font-size: 0.8rem;
+
+						&:hover {
+							color: var(--dark-blue);
+							background: none;
+							background-color: transparent;
+							transition: none;
+							border: none;
+						}
+					}
+					&-left {
+						width: 40%;
+					}
+					&-right {
+						width: 60%;
+						img {
+							height: 2rem;
+							object-fit: contain;
+							&:hover {
+								height: 2.2rem;
+							}
+						}
+					}
+				}
+			}
+		}
+		@media (max-width: 1080px) {
+			&-col1 {
+				width: min(80%, 60.5rem);
+			}
+			&-col2 {
+				width: min(80%, 60.5rem);
 			}
 		}
 	}
@@ -824,7 +914,7 @@ img {
 			height: 250px;
 			right: 2rem;
 			top: -10rem;
-
+			transition: right 1s ease-in-out, top 1s ease-in-out;
 			background: linear-gradient(
 				180deg,
 				rgba(0, 148, 254, 0.25) 0%,
@@ -868,8 +958,9 @@ img {
 
 		@media (max-width: 900px) {
 			&-circle {
-				right: 25%;
-				top: 35%;
+				right: 15rem;
+				top: 58rem;
+				transition: right 1s ease-in-out, top 1s ease-in-out;
 			}
 			&-frame {
 				aspect-ratio: 1;

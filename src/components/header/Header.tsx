@@ -50,12 +50,11 @@ function Header() {
 							>
 								My Works
 							</button>
-
-							<button className='header-container-col1-row-button2'>
-								<Link to='/about' onClick={handleClick}>
+							<Link to='/about' onClick={handleClick}>
+								<button className='header-container-col1-row-button2'>
 									Contact Me
-								</Link>
-							</button>
+								</button>
+							</Link>
 						</div>
 					</div>
 				</div>
