@@ -153,4 +153,31 @@ export const projects = [
 			githubPath: 'Github.png',
 		},
 	},
+	{
+		id: 5,
+		route: '/projects/tingbits',
+		title: 'TingBits',
+		image: 'Tingbits.png',
+		frame: 'Tingbits2.png',
+		subtitle: 'Personal Project',
+		date: 'Ongoing',
+		desc: "TingBits is a personal project that I'm presently working on. It's a smartphone application that makes lending and borrowing money simple.",
+		role: 'Full-stack Developer, UI/UX Designer',
+		challenge:
+			'Implementing a financial app would require a great amount of time and work on my part, and integrating APIs from payment services such as Gcash or Paymaya would make it much more difficult.',
+		solution:
+			'My strategy for determining and finalizing the functionality of my app consisted of beginning with the UI/UX design. Priorities for doing the project so far include devoting time to study and identifying alternatives. It would be wasteful to go forward without knowing whether or not my ideas are viable.',
+		reflection:
+			'After multiple revisions of the designs, I find it fun to take my time building the app since I am improving my abilities and learning a lot. As long as I keep working on it and doing my best, the results will come.',
+		stack: ['Flutter.png', 'Firebase.png'],
+		viewButton: {
+			github: true,
+			gdoc: false,
+			yt: false,
+			pdf: false,
+			app: false,
+			githubLink: 'https://github.com/jdesolate/lending',
+			githubPath: 'Github.png',
+		},
+	},
 ];

@@ -54,6 +54,12 @@
 		rgba(49, 203, 214, 0.1875) 45.83%,
 		rgba(206, 252, 255, 0.025) 100%
 	);
+	--tingbits: linear-gradient(
+		180deg,
+		rgba(248, 185, 82, 0.25) 15.1%,
+		rgba(49, 203, 214, 0.042) 45.83%,
+		rgba(206, 252, 255, 0.025) 100%
+	);
 	--shadow-text: 1px 2px 0.3rem hsl(192, 96%, 28%);
 	--shadow-text2: 2px 3px 0.5rem hsl(0, 0%, 100%);
 	--shadow-shape: 0 0.3rem 0.5rem hsla(192, 100%, 36%, 0.5);
@@ -70,7 +76,7 @@
 
 html body {
 	scroll-behavior: smooth;
-	overflow: hidden;
+	overflow-x: hidden;
 	scroll-snap-type: y proximity;
 }
 
@@ -813,6 +819,15 @@ img {
 		border-radius: 10px;
 		background: var(--altruwiz);
 	}
+	&-bg-tingbits {
+		z-index: -1;
+		position: absolute;
+		height: 50vh;
+		width: 100%;
+		top: -5rem;
+		border-radius: 10px;
+		background: var(--tingbits);
+	}
 	&-header {
 		// margin: 5rem 3vw;
 		margin: 3rem 5vw;
@@ -834,6 +849,7 @@ img {
 				min-width: 100px;
 				object-fit: contain;
 				margin-right: 5vw;
+				// border-radius: 50%;
 			}
 			@media (min-width: 900px) {
 				img {

@@ -39,6 +39,10 @@ export function Details(proj: string) {
 			data = projects[4];
 			break;
 		}
+		case 'tingbits': {
+			data = projects[5];
+			break;
+		}
 	}
 	return (
 		<>

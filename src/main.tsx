@@ -10,6 +10,7 @@ import Whitelist from './components/myworks/details/Whitelist';
 import Datagrades from './components/myworks/details/Datagrades';
 import Altruwiz from './components/myworks/details/Altruwiz';
 import ProjPage from './components/myworks/ProjPage';
+import Tingbits from './components/myworks/details/Tingbits';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
 	<React.StrictMode>
@@ -23,6 +24,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 				<Route path='/projects/whitelist' element={<Whitelist />} />
 				<Route path='/projects/datagrades' element={<Datagrades />} />
 				<Route path='/projects/altruwiz' element={<Altruwiz />} />
+				<Route path='/projects/tingbits' element={<Tingbits />} />
 				<Route path='*' element={<Error />} />
 			</Routes>
 		</Router>
