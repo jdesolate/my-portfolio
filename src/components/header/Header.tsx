@@ -52,7 +52,7 @@ function Header() {
 							</button>
 							<Link to='/about' onClick={handleClick}>
 								<button className='header-container-col1-row-button2'>
-									Contact Me
+									About Me
 								</button>
 							</Link>
 						</div>

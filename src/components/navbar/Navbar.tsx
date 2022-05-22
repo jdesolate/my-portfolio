@@ -1,27 +1,32 @@
 import { Link } from 'react-router-dom';
 
 function Navbar() {
+	const handleClick = () => {
+		setTimeout(() => {
+			const div = document.querySelector('#contact-me');
+			div?.scrollIntoView({ behavior: 'smooth' });
+		}, 500);
+	};
+
 	return (
 		<nav className='navbar'>
-			<div className='navbar-ulCont'>
-				<ul>
-					<li>
-						<Link to='/'>
-							<img src='../../assets/images/MJT Logo.png' alt='MJT Logo' />
-						</Link>
-					</li>
-					<li>
-						<Link to='/projects'>
-							<a>Projects</a>
-						</Link>
-					</li>
-					<li>
-						<Link to='/about'>
-							<a>About</a>
-						</Link>
-					</li>
-				</ul>
-			</div>
+			<ul>
+				<li>
+					<Link to='/'>
+						<img src='../../assets/images/MJT Logo.png' alt='MJT Logo' />
+					</Link>
+				</li>
+				<li className='navbar-item'>
+					<Link to='/projects'>
+						<a>Portfolio</a>
+					</Link>
+				</li>
+				<li className='navbar-item'>
+					<Link to='/about'>
+						<a onClick={handleClick}>Contact Me</a>
+					</Link>
+				</li>
+			</ul>
 		</nav>
 	);
 }
