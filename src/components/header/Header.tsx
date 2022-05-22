@@ -10,17 +10,17 @@ function Header() {
 	};
 	return (
 		<>
-			<div className='header'>
-				<div className='header-bg' />
+			<header className='header'>
 				<div className='header-container'>
-					<div className='header-container-circle'></div>
-					<div className='header-container-comet'></div>
+					<div className='header-container-back'>
+						<div className='header-container-back-circle'></div>
+						<div className='header-container-back-circle2'></div>
+						<div className='header-container-back-circle3'></div>
+					</div>
 					<div className='header-container-col1'>
 						<div className='header-container-col1-top'>
 							<div className='header-container-col1-top-textcont'>
-								<div className='header-container-col1-top-textcont-text1-intro'>
-									<h1>Hey I'm </h1>
-								</div>
+								<p>Hey I'm</p>
 								<div className='header-container-col1-top-textcont-text1-name'>
 									<h1 className='header-container-col1-top-textcont-text1-name-1'>
 										Mervin John{' '}
@@ -30,14 +30,7 @@ function Header() {
 									</h1>
 								</div>
 							</div>
-							<div className='header-container-col1-top-textcont2'>
-								<p className='header-container-col1-top-textcont2-text2'>
-									I make UI/UX Design, Web{' '}
-									<span className='header-container-col1-top-textcont2-text2-3'>
-										& Mobile applications
-									</span>
-								</p>
-							</div>
+							<p>I make UI/UX Design, Web & Mobile applications</p>
 						</div>
 						<div className='header-container-col1-row'>
 							<button
@@ -58,7 +51,7 @@ function Header() {
 						</div>
 					</div>
 				</div>
-			</div>
+			</header>
 		</>
 	);
 }

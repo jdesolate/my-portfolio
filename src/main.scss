@@ -149,6 +149,7 @@ h3 {
 	// border: 1px solid red;
 	z-index: 99;
 	position: fixed;
+	height: 3rem;
 	right: 0;
 	left: 0;
 	padding: 1rem 2rem;
@@ -347,21 +348,23 @@ h3 {
 }
 
 .header {
-	height: 100vh;
-	width: 100%;
+	// border: 1px solid red;
+	padding-top: 3rem;
+	height: calc(100vh + 5rem);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	&-bg {
-		z-index: -1;
-		position: absolute;
-		height: 50vh;
-		width: 100%;
-		top: -5rem;
-		border-radius: 10px;
-		background: var(--main);
-	}
+	// &-bg {
+	// 	z-index: -1;
+	// 	position: absolute;
+	// 	height: 50vh;
+	// 	width: 100%;
+	// 	top: -5rem;
+	// 	border-radius: 10px;
+	// 	background: var(--main);
+	// }
 	&-container {
+		// border: 1px solid red;
 		height: 100%;
 		width: 80%;
 		display: flex;
@@ -369,80 +372,119 @@ h3 {
 		align-items: center;
 		justify-content: center;
 		position: relative;
-		&-circle {
+		&-back {
 			z-index: -1;
 			position: absolute;
-			width: 250px;
-			height: 250px;
-			right: -3rem;
-			top: 5rem;
-			border-radius: 50%;
-			opacity: 0.5;
-			background: var(--gradient);
-			transition: left 1.5s ease-in-out, top 1.5s ease-in-out;
+			top: 0;
+			// border: 1px solid red;
+			// background-color: #cefcff;
+			height: 35rem;
+			width: 100%;
+			&-circle {
+				z-index: -1;
+				position: absolute;
+				width: 250px;
+				height: 250px;
+				right: -3rem;
+				top: 5rem;
+				border-radius: 50%;
+				opacity: 0.5;
+				background: var(--gradient);
+				transition: left 1.5s ease-in-out, top 1.5s ease-in-out;
+			}
+			&-circle2 {
+				z-index: -2;
+				position: absolute;
+				width: 250px;
+				height: 250px;
+				top: 3.5rem;
+				left: 25rem;
+				background: var(--gradient);
+				border-radius: 50%;
+				opacity: 0.35;
+			}
+			&-circle3 {
+				z-index: -3;
+				position: absolute;
+				width: 170px;
+				height: 170px;
+				top: 2.5rem;
+				left: 15rem;
+				background: var(--gradient);
+				border-radius: 50%;
+				opacity: 0.1;
+			}
 		}
 
-		&-comet {
-			position: absolute;
-			z-index: -2;
-			width: 25px;
-			height: 300px;
-			left: 5rem;
-			top: 15rem;
-			border-radius: 50%;
-			background: var(--faded-gradient);
-			transform: rotate(-128.4deg);
-			opacity: 0.5;
-			transition: width 1s ease-in-out, left 1.5s ease-in-out,
-				top 1.5s ease-in-out;
-		}
-		@media (min-width: 900px) {
-			&-circle {
-				width: 450px;
-				height: 450px;
-				top: 2.5rem;
-				left: 35rem;
-				border-radius: 50%;
-				opacity: 1;
-			}
-			&-comet {
-				position: absolute;
-				z-index: -2;
-				width: 33px;
-				height: 515px;
-				left: 15rem;
-				top: 3rem;
-				opacity: 1;
+		// &-comet {
+		// 	position: absolute;
+		// 	z-index: -2;
+		// 	width: 25px;
+		// 	height: 300px;
+		// 	left: 5rem;
+		// 	top: 15rem;
+		// 	border-radius: 50%;
+		// 	background: var(--faded-gradient);
+		// 	transform: rotate(-128.4deg);
+		// 	opacity: 0.5;
+		// 	transition: width 1s ease-in-out, left 1.5s ease-in-out,
+		// 		top 1.5s ease-in-out;
+		// }
+		@media (min-width: 1025px) {
+			&-back {
+				&-circle {
+					width: 400px;
+					height: 400px;
+					top: 15%;
+					left: 50%;
+					border-radius: 50%;
+					opacity: 1;
+				}
+				&-circle2 {
+					width: 280px;
+					height: 280px;
+					top: 15%;
+					left: 40%;
+					border-radius: 50%;
+					opacity: 0.35;
+				}
+				&-circle3 {
+					width: 170px;
+					height: 170px;
+					top: 15%;
+					left: 33%;
+					border-radius: 50%;
+					opacity: 0.1;
+				}
 			}
 		}
 		&-col1 {
+			// border: 1px solid red;
 			display: flex;
 			width: 80%;
 			height: 90%;
 			flex-direction: column;
-			align-items: flex-start;
+			align-items: center;
 			justify-content: space-evenly;
 
 			&-top {
+				// border: 1px solid red;
 				display: flex;
 				flex-direction: column;
-				width: 60vw;
-				margin-bottom: 5vh;
-
+				width: fit-content;
+				p {
+					margin: 0.5rem 0.2rem;
+				}
 				&-textcont {
+					p {
+						margin: 0.3rem 0.2rem;
+					}
 					display: flex;
-					flex-direction: row;
+					flex-direction: column;
 					flex-wrap: wrap;
 					justify-content: flex-start;
 					width: 100%;
 					&-text1 {
-						&-intro {
-							margin-right: 1rem;
-							h1 {
-								font-size: var(--fs-h1);
-								color: var(--color-secondary);
-							}
-						}
 						&-name {
 							color: var(--color-secondary);
 							h1 {
@@ -457,70 +499,54 @@ h3 {
 						}
 					}
 				}
-				@media (min-width: 900px) {
-					&-textcont {
-						justify-content: center;
-					}
-				}
-				&-textcont2 {
-					align-self: center;
-					&-text2 {
-						padding-top: 1em;
-						font-family: var(--ff-main);
-						font-weight: 600;
-						color: var(--black);
-						&-3 {
-							color: var(--color-primary);
-							font-weight: 600;
-							text-shadow: var(--shadow-text);
-						}
-					}
-				}
 			}
 
 			&-row {
+				border-radius: 1px solid red;
 				align-self: center;
 				display: flex;
 				flex-direction: row;
-				justify-content: space-evenly;
+				justify-content: center;
 				flex-wrap: wrap;
 				width: 100%;
 				&-button1 {
-					margin: 1rem 0;
+					margin: 1rem 1rem;
 					font-weight: 600;
-					width: 40%;
+					width: 30%;
 					min-width: 12rem;
 					height: 3em;
-					font-size: var(--fs-h3);
+					font-family: var(--ff-main);
+					font-size: var(--fs-p);
+					border: 0;
+					border-radius: 5px;
 					background-color: var(--color-accent1);
 					color: var(--color-primary);
-					border: 0;
-					border-radius: 10px;
 					cursor: pointer;
 					&:hover {
 						filter: drop-shadow(0 0 0.2rem var(--color-accent1));
 					}
 				}
 				a {
-					width: 40%;
+					width: 30%;
 					text-decoration: none;
 				}
 				&-button2 {
 					margin: 1rem 0;
-					color: var(--cyan);
-					border: 1px solid var(--cyan);
+					color: var(--color-accent1);
+					border: 1px solid var(--color-accent1);
 					text-decoration: none;
-					font-weight: 600;
+					font-weight: 500;
 					width: 100%;
 					min-width: 12rem;
 					height: 3em;
-					font-size: var(--fs-h3);
+					font-family: var(--ff-main);
+					font-size: var(--fs-p);
 					background-color: transparent;
-					border-radius: 10px;
+					border-radius: 5px;
 					cursor: pointer;
 					&:hover {
-						color: var(--color-accent1);
-						border: 1px solid var(--color-accent1);
+						color: var(--cyan);
+						border: 1px solid var(--cyan);
 					}
 				}
 			}
