@@ -8,6 +8,26 @@
 	--breakpoint-small: 769px; // 769px — 1024px: Small screens, laptops
 	--breakpoint-large: 1025px; //1025px — 1200px: Desktops, large screens
 	--breakpoint-xlarge: 1201px; //1201px and more —  Extra large screens, TV
+	--shadow-text: 1px 2px 0.3rem hsl(192, 96%, 28%);
+	--shadow-text2: 2px 3px 0.5rem hsl(0, 0%, 100%);
+	--shadow-shape: 0 0.3rem 0.5rem hsla(192, 100%, 36%, 0.5);
+	--shadow-shape2: 0 1rem 2rem hsla(192, 100%, 36%, 0.2);
+	--shadow-nav: 0 0.3rem 0.5rem hsla(192, 100%, 36%, 0.064);
+	--circ-main-t: 12rem;
+	--circ-main-r: 5rem;
+	--ff-main: 'Montserrat', sans-serif;
+	--fs-l: clamp(2rem, 2.5vw + 1rem, 4rem);
+	--fs-800: 3rem;
+	--fs-700: 2rem;
+	--fs-600: 1.5rem;
+	--fs-500: 1.25rem;
+	--fs-400: clamp(1rem, 0.1vw + 0.8rem, 3rem);
+	--fs-h1: clamp(38px, 5vw + 1rem, 48px);
+	--fs-h1-alt: clamp(26px, 5vw + 1rem, 34px);
+	--fs-h2: clamp(22px, 4vw + 1rem, 30px);
+	--fs-h3: clamp(14px, 3vw + 1rem, 22px);
+	--fs-p: clamp(12px, 3vw + 1rem, 20px);
+	--fs-p-nav: min(14px, 2rem);
 	--color-accent1: #1e90ff;
 	--cyan: #31cbd6;
 	--color-secondary: #013768;
@@ -69,18 +89,6 @@
 		rgba(49, 203, 214, 0.042) 45.83%,
 		rgba(206, 252, 255, 0.025) 100%
 	);
-	--shadow-text: 1px 2px 0.3rem hsl(192, 96%, 28%);
-	--shadow-text2: 2px 3px 0.5rem hsl(0, 0%, 100%);
-	--shadow-shape: 0 0.3rem 0.5rem hsla(192, 100%, 36%, 0.5);
-	--shadow-shape2: 0 1rem 2rem hsla(192, 100%, 36%, 0.2);
-	--shadow-nav: 0 0.3rem 0.5rem hsla(192, 100%, 36%, 0.064);
-	--ff-main: 'Montserrat', sans-serif;
-	--fs-h1: clamp(38px, 5vw + 1rem, 48px);
-	--fs-h1-alt: clamp(26px, 5vw + 1rem, 34px);
-	--fs-h2: clamp(22px, 4vw + 1rem, 30px);
-	--fs-h3: clamp(14px, 3vw + 1rem, 22px);
-	--fs-p: clamp(12px, 3vw + 1rem, 20px);
-	--fs-p-nav: min(14px, 2rem);
 }
 
 html,
@@ -114,6 +122,16 @@ h1,
 h2,
 h3 {
 	color: var(--color-secondary);
+}
+
+h1 {
+	font-size: var(--fs-l);
+	font-weight: 800;
+}
+
+p {
+	font-size: var(--fs-400);
+	font-weight: 400;
 }
 
 // h2,
@@ -184,7 +202,7 @@ h3 {
 		}
 	}
 	img {
-		height: 2.5rem;
+		height: 2em;
 		object-fit: contain;
 
 		&:hover {
@@ -241,7 +259,7 @@ h3 {
 			margin-left: 2rem;
 		}
 		img {
-			height: 3rem;
+			height: 2.5em;
 		}
 	}
 }
@@ -383,54 +401,76 @@ h3 {
 			&-circle {
 				z-index: -1;
 				position: absolute;
-				width: 250px;
-				height: 250px;
-				right: -3rem;
-				top: 5rem;
+				width: 280px;
+				height: 280px;
+				right: var(--circ-main-r);
+				top: var(--circ-main-t);
 				border-radius: 50%;
-				opacity: 0.5;
+				opacity: 1;
 				background: var(--gradient);
-				transition: left 1.5s ease-in-out, top 1.5s ease-in-out;
+				transition: right 1.5s ease-in-out, top 1.5s ease-in-out;
 			}
 			&-circle2 {
 				z-index: -2;
 				position: absolute;
-				width: 250px;
-				height: 250px;
-				top: 3.5rem;
-				left: 25rem;
+				width: 180px;
+				height: 180px;
+				right: calc(var(--circ-main-r) + 10rem);
+				top: var(--circ-main-t);
 				background: var(--gradient);
 				border-radius: 50%;
 				opacity: 0.35;
+				transition: right 1.5s ease-in-out, top 1.5s ease-in-out;
 			}
 			&-circle3 {
 				z-index: -3;
 				position: absolute;
-				width: 170px;
-				height: 170px;
-				top: 2.5rem;
-				left: 15rem;
+				width: 120px;
+				height: 120px;
+				right: calc(var(--circ-main-r) + 17rem);
+				top: var(--circ-main-t);
 				background: var(--gradient);
 				border-radius: 50%;
 				opacity: 0.1;
+				transition: right 1.5s ease-in-out, top 1.5s ease-in-out;
 			}
 		}
 
-		// &-comet {
-		// 	position: absolute;
-		// 	z-index: -2;
-		// 	width: 25px;
-		// 	height: 300px;
-		// 	left: 5rem;
-		// 	top: 15rem;
-		// 	border-radius: 50%;
-		// 	background: var(--faded-gradient);
-		// 	transform: rotate(-128.4deg);
-		// 	opacity: 0.5;
-		// 	transition: width 1s ease-in-out, left 1.5s ease-in-out,
-		// 		top 1.5s ease-in-out;
-		// }
-		@media (min-width: 1025px) {
+		@media (min-width: 1281px) {
+			//extra large
+			h1 {
+				font-size: var(--fs-l);
+				transition: font-size 1s ease-in-out;
+			}
+			&-back {
+				&-circle {
+					width: 500px;
+					height: 500px;
+					top: 30%;
+					left: 50%;
+					border-radius: 50%;
+					opacity: 1;
+				}
+				&-circle2 {
+					width: 380px;
+					height: 380px;
+					top: 25%;
+					left: 40%;
+					border-radius: 50%;
+					opacity: 0.35;
+				}
+				&-circle3 {
+					width: 270px;
+					height: 270px;
+					top: 25%;
+					left: 33%;
+					border-radius: 50%;
+					opacity: 0.1;
+				}
+			}
+		}
+		@media (max-width: 1280px) {
+			//desktop - large
 			&-back {
 				&-circle {
 					width: 400px;
@@ -458,10 +498,11 @@ h3 {
 				}
 			}
 		}
+
 		&-col1 {
 			// border: 1px solid red;
 			display: flex;
-			width: 80%;
+			width: 100%;
 			height: 90%;
 			flex-direction: column;
 			align-items: center;
@@ -488,11 +529,12 @@ h3 {
 						&-name {
 							color: var(--color-secondary);
 							h1 {
-								font-size: var(--fs-h1);
-								font-weight: 800;
+								// font-size: var(--fs-800);
+
+								transition: font-size 1s ease-in-out;
 							}
 							&-2 {
-								font-weight: 800;
+								// font-weight: 800;
 								color: var(--color-primary);
 								text-shadow: var(--shadow-text);
 							}
@@ -502,7 +544,9 @@ h3 {
 			}
 
 			&-row {
-				border-radius: 1px solid red;
+				width: fit-content;
+				height: fit-content;
+				// border: 1px solid red;
 				align-self: center;
 				display: flex;
 				flex-direction: row;
@@ -510,13 +554,14 @@ h3 {
 				flex-wrap: wrap;
 				width: 100%;
 				&-button1 {
+					// border: 1px solid red;
 					margin: 1rem 1rem;
 					font-weight: 600;
 					width: 30%;
 					min-width: 12rem;
 					height: 3em;
+					// font-size: var(--fs-p);
 					font-family: var(--ff-main);
-					font-size: var(--fs-p);
 					border: 0;
 					border-radius: 5px;
 					background-color: var(--color-accent1);
@@ -528,9 +573,11 @@ h3 {
 				}
 				a {
 					width: 30%;
+					min-width: 12rem;
 					text-decoration: none;
 				}
 				&-button2 {
+					// border: 1px solid red;
 					margin: 1rem 0;
 					color: var(--color-accent1);
 					border: 1px solid var(--color-accent1);
@@ -540,7 +587,7 @@ h3 {
 					min-width: 12rem;
 					height: 3em;
 					font-family: var(--ff-main);
-					font-size: var(--fs-p);
+					// font-size: var(--fs-p);
 					background-color: transparent;
 					border-radius: 5px;
 					cursor: pointer;
@@ -550,22 +597,14 @@ h3 {
 					}
 				}
 			}
-			@media (max-width: 520px) {
-				&-row {
-					&-button1 {
-						font-weight: 600;
-						font-size: var(--fs-h4);
-					}
-					a {
-						width: 40%;
-						min-width: 12rem;
-					}
-					&-button2 {
-						font-weight: 600;
-						width: 100%;
-						font-size: var(--fs-h4);
-					}
-				}
+			@media (min-width: 481px) {
+				// &-row {
+				// 	// a {
+				// 	// 	margin-left: 1rem;
+				// 	// 	width: 40%;
+				// 	// 	min-width: 12rem;
+				// 	}
+				// }
 			}
 		}
 	}
@@ -587,7 +626,7 @@ h3 {
 		justify-content: center;
 		h1 {
 			font-weight: 700;
-			font-size: var(--fs-h1);
+			// font-size: var(--fs-h1);
 			color: var(--color-secondary);
 		}
 		p {
@@ -642,14 +681,14 @@ h3 {
 			align-self: flex-start;
 			h1 {
 				font-weight: 700;
-				font-size: var(--fs-h1);
+				// font-size: var(--fs-h1);
 				margin-bottom: 5vh;
 				color: var(--color-secondary);
 			}
 		}
 		p {
 			font-weight: 500;
-			font-size: var(--fs-p);
+			// font-size: var(--fs-p);
 			text-align: justify;
 			color: var(--black);
 		}
@@ -726,18 +765,18 @@ h3 {
 				margin-bottom: 5vh;
 				h2 {
 					font-weight: 700;
-					font-size: var(--fs-h2);
+					// font-size: var(--fs-h2);
 					color: var(--color-secondary);
 				}
 				h3 {
 					font-weight: 600;
-					font-size: var(--fs-h3);
+					// font-size: var(--fs-h3);
 					color: var(--black);
 				}
 			}
 			p {
 				font-weight: 400;
-				font-size: var(--fs-p);
+				// font-size: var(--fs-p);
 				text-align: justify;
 				color: var(--black);
 				margin-bottom: 2rem;
@@ -751,7 +790,7 @@ h3 {
 				button {
 					font-family: 'Montserrat';
 					font-weight: 500;
-					font-size: var(--fs-p);
+					// font-size: var(--fs-p);
 					border: none;
 					padding: 0;
 					text-transform: none;
@@ -793,17 +832,17 @@ h3 {
 					margin-bottom: 2vh;
 					h2 {
 						margin: 0 1rem;
-						font-size: var(--fs-h3);
+						// font-size: var(--fs-h3);
 					}
 					h3 {
 						margin: 0 1rem;
-						font-size: var(--fs-h4);
+						// font-size: var(--fs-h4);
 					}
 				}
 				p {
 					margin: 0 1rem;
 					font-weight: 400;
-					font-size: var(--fs-h4);
+					// font-size: var(--fs-h4);
 				}
 				&-bottom {
 					height: 2rem;

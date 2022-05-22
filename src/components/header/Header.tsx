@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import '../../main.scss';
 
@@ -10,12 +11,27 @@ function Header() {
 	};
 	return (
 		<>
-			<header className='header'>
+			<section className='header'>
 				<div className='header-container'>
 					<div className='header-container-back'>
-						<div className='header-container-back-circle'></div>
-						<div className='header-container-back-circle2'></div>
-						<div className='header-container-back-circle3'></div>
+						<motion.div
+							className='header-container-back-circle'
+							initial={{ opacity: 0, x: '-50%', y: '-50%' }}
+							animate={{ opacity: 1, x: 0, y: 0 }}
+							transition={{ type: 'tween', duration: 1 }}
+						></motion.div>
+						<motion.div
+							className='header-container-back-circle2'
+							initial={{ opacity: 0, x: '-50%', y: '-50%' }}
+							animate={{ opacity: 0.35, x: 0, y: 0 }}
+							transition={{ delay: 0.3, type: 'tween', duration: 1 }}
+						></motion.div>
+						<motion.div
+							className='header-container-back-circle3'
+							initial={{ opacity: 0, x: '-50%', y: '-50%' }}
+							animate={{ opacity: 0.1, x: 0, y: 0 }}
+							transition={{ delay: 0.5, type: 'tween', duration: 1 }}
+						></motion.div>
 					</div>
 					<div className='header-container-col1'>
 						<div className='header-container-col1-top'>
@@ -51,7 +67,7 @@ function Header() {
 						</div>
 					</div>
 				</div>
-			</header>
+			</section>
 		</>
 	);
 }
