@@ -2,10 +2,8 @@ import { Link } from 'react-router-dom';
 
 function Navbar() {
 	const handleClick = () => {
-		setTimeout(() => {
-			const div = document.querySelector('#contact-me');
-			div?.scrollIntoView({ behavior: 'smooth' });
-		}, 500);
+		const div = document.querySelector('#contact-me');
+		div?.scrollIntoView({ behavior: 'smooth' });
 	};
 
 	return (
@@ -22,9 +20,7 @@ function Navbar() {
 					</Link>
 				</li>
 				<li className='navbar-item'>
-					<Link to='/about'>
-						<a onClick={handleClick}>Contact Me</a>
-					</Link>
+					<a onClick={handleClick}>Contact Me</a>
 				</li>
 			</ul>
 		</nav>

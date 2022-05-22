@@ -18,7 +18,7 @@
 	--ff-main: 'Montserrat', sans-serif;
 	--fs-l: clamp(2rem, 2.5vw + 1rem, 4rem);
 	--fs-800: 3rem;
-	--fs-700: 2rem;
+	--fs-700: clamp(1.8rem, 1.5vw + 1rem, 2.5rem);
 	--fs-600: 1.5rem;
 	--fs-500: 1.25rem;
 	--fs-400: clamp(1rem, 0.1vw + 0.8rem, 3rem);
@@ -129,9 +129,13 @@ h1 {
 	font-weight: 800;
 }
 
+h2 {
+	font-size: var(--fs-700);
+	font-weight: 700;
+}
 p {
 	font-size: var(--fs-400);
-	font-weight: 400;
+	font-weight: 500;
 }
 
 // h2,
@@ -149,14 +153,15 @@ p {
 // 	max-width: 100%;
 // }
 
-// .main {
-// 	border: 1px solid red;
-// 	display: flex;
-// 	align-items: center;
-// 	justify-content: center;
-// 	flex-direction: column;
-// 	row-gap: 0;
-// }
+.main {
+	border: 1px solid red;
+	display: flex;
+	padding: 1rem;
+	flex-direction: column;
+
+	// align-items: center;
+	// justify-content: center;
+}
 // @media (min-width: 720px) {
 // 	.main {
 // 		width: 100%;
@@ -198,6 +203,7 @@ p {
 		font-size: var(--fs-p-nav);
 		color: var(--black);
 		&:hover {
+			cursor: pointer;
 			color: var(--color-accent1);
 		}
 	}
@@ -366,8 +372,7 @@ p {
 }
 
 .header {
-	// border: 1px solid red;
-	padding-top: 3rem;
+	// padding-top: 3rem;
 	height: calc(100vh + 5rem);
 	display: flex;
 	flex-direction: column;
@@ -571,11 +576,7 @@ p {
 						filter: drop-shadow(0 0 0.2rem var(--color-accent1));
 					}
 				}
-				a {
-					width: 30%;
-					min-width: 12rem;
-					text-decoration: none;
-				}
+
 				&-button2 {
 					// border: 1px solid red;
 					margin: 1rem 0;
@@ -583,8 +584,9 @@ p {
 					border: 1px solid var(--color-accent1);
 					text-decoration: none;
 					font-weight: 500;
-					width: 100%;
+					width: 30%;
 					min-width: 12rem;
+					text-decoration: none;
 					height: 3em;
 					font-family: var(--ff-main);
 					// font-size: var(--fs-p);
@@ -597,20 +599,24 @@ p {
 					}
 				}
 			}
-			@media (min-width: 481px) {
-				// &-row {
-				// 	// a {
-				// 	// 	margin-left: 1rem;
-				// 	// 	width: 40%;
-				// 	// 	min-width: 12rem;
-				// 	}
-				// }
+			@media (min-width: 1281px) {
+				&-row {
+					&-button1 {
+						width: 20%;
+						max-width: 600px;
+					}
+					a {
+						width: 20%;
+						max-width: 600px;
+					}
+				}
 			}
 		}
 	}
 }
 
 .techStack {
+	align-self: center;
 	height: 100%;
 	width: 95%;
 	display: flex;
@@ -624,28 +630,52 @@ p {
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		h1 {
-			font-weight: 700;
-			// font-size: var(--fs-h1);
+
+		h2 {
 			color: var(--color-secondary);
 		}
 		p {
-			font-weight: 500;
+			// font-weight: 500;
 			padding-top: 1em;
 			text-align: center;
 			color: var(--black);
 		}
 	}
 	&-cont2 {
-		padding: 5vh 5vw;
+		// border: 1px solid red;
+		max-width: 1200px;
+		margin: 4rem auto;
+		font-size: 2rem;
 		display: grid;
-		grid-template-columns: auto auto auto auto auto;
-		column-gap: 5vw;
-		row-gap: 10vh;
+		grid-gap: 5rem;
+
 		img {
 			object-fit: contain;
-			height: 100px;
-			width: 100px;
+			height: 2em;
+			width: 2em;
+		}
+	}
+	@media (min-width: 300px) {
+		&-cont2 {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+	@media (min-width: 600px) {
+		&-cont2 {
+			grid-template-columns: repeat(3, 1fr);
+			img {
+				height: 2.5em;
+				width: 2.5em;
+			}
+		}
+	}
+	@media (min-width: 1026px) {
+		&-cont2 {
+			grid-template-columns: repeat(5, 1fr);
+			img {
+				height: 3em;
+				width: 3em;
+			}
 		}
 	}
 }
@@ -1230,29 +1260,29 @@ p {
 	flex-direction: column;
 	text-align: justify;
 	align-items: flex-start;
-	&-bg {
-		z-index: -1;
-		position: absolute;
-		height: 50vh;
-		width: 100%;
-		top: -5rem;
-		border-radius: 10px;
-		background: var(--main);
-	}
+	// &-bg {
+	// 	z-index: -1;
+	// 	position: absolute;
+	// 	height: 50vh;
+	// 	width: 100%;
+	// 	top: -5rem;
+	// 	border-radius: 10px;
+	// 	background: var(--main);
+	// }
 	&-title {
 		// border: 1px solid red;
 		padding: 2rem 3rem 5rem 3rem;
-		&-comet {
-			position: absolute;
-			z-index: -1;
-			width: 45px;
-			height: 350px;
-			left: 10rem;
-			border-radius: 50%;
-			background: var(--faded-gradient);
-			opacity: 0.8;
-			transform: rotate(-121.4deg);
-		}
+		// &-comet {
+		// 	position: absolute;
+		// 	z-index: -1;
+		// 	width: 45px;
+		// 	height: 350px;
+		// 	left: 10rem;
+		// 	border-radius: 50%;
+		// 	background: var(--faded-gradient);
+		// 	opacity: 0.8;
+		// 	transform: rotate(-121.4deg);
+		// }
 	}
 	&-desc1 {
 		// border: 1px solid red;

@@ -5,8 +5,8 @@ import '../../main.scss';
 function Header() {
 	const handleClick = () => {
 		setTimeout(() => {
-			const div = document.querySelector('#contact-me');
-			div?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+			const div = document.querySelector('#about-me');
+			div?.scrollIntoView({ behavior: 'smooth' });
 		}, 500);
 	};
 	return (
@@ -59,11 +59,13 @@ function Header() {
 							>
 								My Works
 							</button>
-							<Link to='/about' onClick={handleClick}>
-								<button className='header-container-col1-row-button2'>
-									About Me
-								</button>
-							</Link>
+
+							<button
+								className='header-container-col1-row-button2'
+								onClick={handleClick}
+							>
+								About Me
+							</button>
 						</div>
 					</div>
 				</div>
