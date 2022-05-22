@@ -1,11 +1,17 @@
 import { Link } from 'react-router-dom';
 
 function Navbar() {
-	const handleClick = () => {
-		const div = document.querySelector('#contact-me');
-		div?.scrollIntoView({ behavior: 'smooth' });
+	const handleClick = (id: string) => {
+		setTimeout(() => {
+			const div = document.querySelector(id);
+			div?.scrollIntoView({
+				behavior: 'smooth',
+				block: 'start',
+				inline: 'nearest',
+			});
+		}, 100);
 	};
-
+	//set loading screen
 	return (
 		<nav className='navbar'>
 			<ul>
@@ -14,13 +20,16 @@ function Navbar() {
 						<img src='../../assets/images/MJT Logo.png' alt='MJT Logo' />
 					</Link>
 				</li>
+
 				<li className='navbar-item'>
-					<Link to='/projects'>
-						<a>Portfolio</a>
+					<Link to='/'>
+						<a onClick={() => handleClick('#proj')}>Projects</a>
 					</Link>
 				</li>
 				<li className='navbar-item'>
-					<a onClick={handleClick}>Contact Me</a>
+					<Link to='/'>
+						<a onClick={() => handleClick('#contact-me')}>Contact Me</a>
+					</Link>
 				</li>
 			</ul>
 		</nav>

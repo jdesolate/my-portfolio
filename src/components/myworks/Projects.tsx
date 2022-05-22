@@ -10,12 +10,15 @@ function Projects() {
 
 	return (
 		<>
-			<div className='projects' id='proj'>
+			<div className='projects'>
 				<>
-					<div className='projects-comet'></div>
+					<div
+						id='proj'
+						style={{ position: 'absolute', top: '-6rem', left: '0' }}
+					/>
 					<div className='projects-header'>
 						<div className='projects-header-title'>
-							<h1>Projects</h1>
+							<h2>Projects</h2>
 						</div>
 						<p>
 							Most of these projects are made together with a team. I worked in
@@ -49,13 +52,14 @@ function Projects() {
 							</div>
 							<div className='projects-card-col2'>
 								<div className='projects-card-col2-title'>
-									<h2>{data.title}</h2>
-									<h3>{data.subtitle}</h3>
+									<h3>{data.title}</h3>
+									<h4>{data.subtitle}</h4>
 								</div>
 								<p>{data.desc}</p>
 								<div className='projects-card-col2-bottom'>
 									<div className='projects-card-col2-bottom-left'>
 										<Button
+											className='projects-card-col2-bottom-left-button1'
 											variant='outlined'
 											disableRipple={true}
 											onClick={() => {
