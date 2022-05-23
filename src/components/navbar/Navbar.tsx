@@ -22,14 +22,14 @@ function Navbar() {
 				</li>
 
 				<li className='navbar-item'>
-					<Link to='/'>
-						<a onClick={() => handleClick('#proj')}>Projects</a>
-					</Link>
+					{/* <Link to='/'> */}
+					<a onClick={() => handleClick('#proj')}>Projects</a>
+					{/* </Link> */}
 				</li>
 				<li className='navbar-item'>
-					<Link to='/'>
-						<a onClick={() => handleClick('#contact-me')}>Contact Me</a>
-					</Link>
+					{/* <Link to='/'> */}
+					<a onClick={() => handleClick('#contact-me')}>Contact Me</a>
+					{/* </Link> */}
 				</li>
 			</ul>
 		</nav>

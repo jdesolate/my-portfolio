@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Home';
-import About from './components/about/About';
 import Error from './components/Error';
 import Booksynation from './components/myworks/details/Booksynation';
 import Recycler from './components/myworks/details/Recycler';
@@ -16,7 +15,6 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 		<Router>
 			<Routes>
 				<Route path='/' element={<Home />} />
-				<Route path='/about' element={<About />} />
 				<Route path='/projects/booksynation' element={<Booksynation />} />
 				<Route path='/projects/recycl3r' element={<Recycler />} />
 				<Route path='/projects/whitelist' element={<Whitelist />} />

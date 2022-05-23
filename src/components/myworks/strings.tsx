@@ -1,3 +1,11 @@
+import image1 from '../../../assets/images/Scrabble.png';
+import image2 from '../../../assets/images/Graduation.png';
+import image3 from '../../../assets/images/Mervin.png';
+import image4 from '../../../assets/images/Mervin2.png';
+import image5 from '../../../assets/images/Mervin3.png';
+import image6 from '../../../assets/images/Silhouette.png';
+import image7 from '../../../assets/images/Accenture.png';
+
 export const projects = [
 	{
 		id: 0,
@@ -181,3 +189,5 @@ export const projects = [
 		},
 	},
 ];
+
+export const pics = [image1, image2, image3, image4, image5, image6, image7];

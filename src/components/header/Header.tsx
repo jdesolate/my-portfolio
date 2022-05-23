@@ -1,13 +1,12 @@
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
 import '../../main.scss';
 
 function Header() {
-	const handleClick = () => {
+	const handleClick = (id: string) => {
 		setTimeout(() => {
-			const div = document.querySelector('#about-me');
-			div?.scrollIntoView({ behavior: 'smooth' });
-		}, 500);
+			const div = document.querySelector(id);
+			div?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+		}, 50);
 	};
 	return (
 		<>
@@ -51,18 +50,14 @@ function Header() {
 						<div className='header-container-col1-row'>
 							<button
 								className='header-container-col1-row-button1'
-								onClick={() =>
-									document
-										.getElementById('proj')
-										?.scrollIntoView({ behavior: 'smooth' })
-								}
+								onClick={() => handleClick('#proj')}
 							>
 								My Works
 							</button>
 
 							<button
 								className='header-container-col1-row-button2'
-								onClick={handleClick}
+								onClick={() => handleClick('#about-me')}
 							>
 								About Me
 							</button>
