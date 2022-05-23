@@ -3,6 +3,8 @@ import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import LocalPhoneOutlinedIcon from '@mui/icons-material/LocalPhoneOutlined';
 import { useState } from 'react';
 import ContentPasteOutlinedIcon from '@mui/icons-material/ContentPasteOutlined';
+import InsertDriveFileIcon from '@mui/icons-material/InsertDriveFile';
+
 function copyToClip(text: any) {
 	navigator.clipboard.writeText(text);
 }
@@ -56,6 +58,15 @@ function Contact() {
 						</div>
 					) : null}
 				</div>
+				<a
+					className='contact-cont-resume'
+					href='https://drive.google.com/file/d/1kpcpWJ-6kg-rtDT9r--dvUGBpJvbdWax/view?usp=sharing'
+					target='_blank'
+				>
+					<Button disableRipple={true} startIcon={<InsertDriveFileIcon />}>
+						My Resume
+					</Button>
+				</a>
 			</div>
 		</div>
 	);
