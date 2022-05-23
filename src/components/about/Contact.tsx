@@ -18,17 +18,20 @@ function Contact() {
 			<h3>Feel free to contact me through:</h3>
 			<div className='contact-cont'>
 				<div className='contact-cont-row'>
-					<Button
-						disableRipple={true}
-						startIcon={<EmailOutlinedIcon />}
-						onClick={() => {
-							copyToClip(email);
-							setCopiedEmail(true);
-							setTimeout(() => setCopiedEmail(false), 3000);
-						}}
-					>
-						{email}
-					</Button>
+					<a href='mailto:mervinjohn.tampus@cit.edu'>
+						<Button
+							disableRipple={true}
+							startIcon={<EmailOutlinedIcon />}
+							onClick={() => {
+								copyToClip(email);
+								setCopiedEmail(true);
+								setTimeout(() => setCopiedEmail(false), 3000);
+							}}
+						>
+							{email}
+						</Button>
+					</a>
+
 					{copiedEmail ? (
 						<div className='contact-cont-row-pop'>
 							<ContentPasteOutlinedIcon color='primary' />

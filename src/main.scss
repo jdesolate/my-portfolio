@@ -1020,18 +1020,21 @@ p {
 .details {
 	height: auto;
 	display: flex;
-	width: calc(100% - 0.2rem);
+	width: 100%;
 	flex-direction: column;
 	align-items: center;
 	position: relative;
 	text-align: justify;
+	h2 {
+		font-weight: 700;
+	}
 
 	&-bg-booksynation {
 		z-index: -1;
 		position: absolute;
 		height: 50vh;
 		width: 100%;
-		top: -5rem;
+		// top: -5rem;
 		border-radius: 10px;
 		background: var(--booksynation);
 	}
@@ -1082,8 +1085,8 @@ p {
 	}
 	&-header {
 		// margin: 5rem 3vw;
-		margin: 3rem 5vw;
-		// padding: 3rem 5vw;
+		// margin: 3rem 5vw;
+		padding: 10rem 5rem;
 		height: auto;
 		display: flex;
 		flex-direction: column;
