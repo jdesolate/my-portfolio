@@ -9,8 +9,6 @@
 	--breakpoint-large: 1025px; //1025px — 1200px: Desktops, large screens
 	--breakpoint-xlarge: 1201px; //1201px and more —  Extra large screens, TV
 	--shadow-text: 1px 2px 0.3rem hsl(192, 96%, 28%);
-	--circ-main-t: 12rem;
-	--circ-main-r: 5rem;
 	--ff-main: 'Montserrat', sans-serif;
 	--fs-l: clamp(2rem, 2.5vw + 1rem, 4rem);
 	--fs-800: 3rem;
@@ -23,10 +21,10 @@
 	--fs-p: clamp(12px, 3vw + 1rem, 20px);
 	--fs-p-nav: min(14px, 2rem);
 	--color-accent1: #1e90ff;
-	--cyan: #31cbd6;
+	--color-accent2: #31cbd6;
 	--color-secondary: #013768;
 	--color-primary: #ffffff;
-	--black: #313131;
+	--color-secondary2: #313131;
 	--gradient: linear-gradient(180deg, #0094fe 0%, #31cbd6 56.77%, #cefcff 100%);
 	--faded-gradient: linear-gradient(
 		180deg,
@@ -111,7 +109,7 @@ body {
 		background: rgb(202, 202, 202);
 		border-radius: 5px;
 		&:hover {
-			background: var(--cyan);
+			background: var(--color-accent2);
 		}
 	}
 }
@@ -191,7 +189,7 @@ p {
 		text-decoration: none;
 		font-weight: 600;
 		font-size: var(--fs-p-nav);
-		color: var(--black);
+		color: var(--color-secondary2);
 		&:hover {
 			cursor: pointer;
 			color: var(--color-accent1);
@@ -345,10 +343,6 @@ p {
 			&-circle {
 				z-index: -1;
 				position: absolute;
-				width: 280px;
-				height: 280px;
-				right: var(--circ-main-r);
-				top: var(--circ-main-t);
 				border-radius: 50%;
 				opacity: 1;
 				background: var(--gradient);
@@ -357,10 +351,6 @@ p {
 			&-circle2 {
 				z-index: -2;
 				position: absolute;
-				width: 180px;
-				height: 180px;
-				right: calc(var(--circ-main-r) + 10rem);
-				top: var(--circ-main-t);
 				background: var(--gradient);
 				border-radius: 50%;
 				opacity: 0.35;
@@ -369,10 +359,6 @@ p {
 			&-circle3 {
 				z-index: -3;
 				position: absolute;
-				width: 120px;
-				height: 120px;
-				right: calc(var(--circ-main-r) + 17rem);
-				top: var(--circ-main-t);
 				background: var(--gradient);
 				border-radius: 50%;
 				opacity: 0.1;
@@ -388,24 +374,18 @@ p {
 					height: 400px;
 					top: 15%;
 					left: 50%;
-					border-radius: 50%;
-					opacity: 1;
 				}
 				&-circle2 {
 					width: 280px;
 					height: 280px;
 					top: 15%;
 					left: 40%;
-					border-radius: 50%;
-					opacity: 0.35;
 				}
 				&-circle3 {
 					width: 170px;
 					height: 170px;
 					top: 15%;
 					left: 33%;
-					border-radius: 50%;
-					opacity: 0.1;
 				}
 			}
 		}
@@ -421,24 +401,18 @@ p {
 					height: 500px;
 					top: 25%;
 					left: 50%;
-					border-radius: 50%;
-					opacity: 1;
 				}
 				&-circle2 {
 					width: 380px;
 					height: 380px;
 					top: 25%;
 					left: 40%;
-					border-radius: 50%;
-					opacity: 0.35;
 				}
 				&-circle3 {
 					width: 270px;
 					height: 270px;
 					top: 25%;
 					left: 33%;
-					border-radius: 50%;
-					opacity: 0.1;
 				}
 			}
 		}
@@ -525,8 +499,8 @@ p {
 					border-radius: 5px;
 					cursor: pointer;
 					&:hover {
-						color: var(--cyan);
-						border: 1px solid var(--cyan);
+						color: var(--color-accent2);
+						border: 1px solid var(--color-accent2);
 					}
 				}
 			}
@@ -549,7 +523,7 @@ p {
 
 .techStack {
 	align-self: center;
-	height: 100vh;
+	height: fit-content;
 	width: 95%;
 	display: flex;
 	flex-direction: column;
@@ -567,7 +541,7 @@ p {
 		p {
 			padding-top: 1em;
 			text-align: center;
-			color: var(--black);
+			color: var(--color-secondary2);
 		}
 	}
 	&-cont2 {
@@ -678,7 +652,7 @@ p {
 		p {
 			margin: 0 1rem;
 			text-align: justify;
-			color: var(--black);
+			color: var(--color-secondary2);
 		}
 	}
 
@@ -756,7 +730,7 @@ p {
 				}
 				h4 {
 					text-align: center;
-					color: var(--black);
+					color: var(--color-secondary2);
 					margin-bottom: 2rem;
 				}
 			}
@@ -793,7 +767,7 @@ p {
 					width: 100%;
 					&-button1 {
 						&:hover {
-							color: var(--cyan);
+							color: var(--color-accent2);
 						}
 					}
 				}
@@ -888,7 +862,7 @@ p {
 							height: 100%;
 							width: 100%;
 							&:hover {
-								border: 1px solid var(--cyan);
+								border: 1px solid var(--color-accent2);
 							}
 						}
 					}
@@ -1081,7 +1055,7 @@ p {
 					margin: 0;
 					padding: 0;
 					// font-size: var(--fs-h4);
-					color: var(--black);
+					color: var(--color-secondary2);
 				}
 				h4 {
 					// font-size: var(--fs-h4);
@@ -1345,7 +1319,7 @@ p {
 		// width: calc(80% - 5rem);
 
 		h2 {
-			color: var(--black);
+			color: var(--color-secondary2);
 			font-size: var(--fs-h2);
 			font-weight: 500;
 			transition: font-size 1s ease-in-out;
@@ -1486,7 +1460,7 @@ p {
 			margin-top: 1rem;
 			button {
 				font-size: var(--fs-400);
-				color: var(--black);
+				color: var(--color-secondary2);
 				text-transform: none;
 				&:hover {
 					background-color: none;
@@ -1503,7 +1477,7 @@ p {
 			margin-top: 1rem;
 			button {
 				font-size: var(--fs-400);
-				color: var(--black);
+				color: var(--color-secondary2);
 				text-transform: lowercase;
 				&:hover {
 					background-color: none;

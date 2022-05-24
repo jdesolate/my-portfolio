@@ -1,6 +1,7 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 function Navbar() {
+	const location = useLocation();
 	const handleClick = (id: string) => {
 		setTimeout(() => {
 			const div = document.querySelector(id);
@@ -9,7 +10,7 @@ function Navbar() {
 				block: 'start',
 				inline: 'nearest',
 			});
-		}, 100);
+		}, 200);
 	};
 	//set loading screen
 	return (
@@ -22,14 +23,22 @@ function Navbar() {
 				</li>
 
 				<li className='navbar-item'>
-					{/* <Link to='/'> */}
-					<a onClick={() => handleClick('#proj')}>Portfolio</a>
-					{/* </Link> */}
+					{location.pathname != '/' ? (
+						<Link to='/'>
+							<a onClick={() => handleClick('#proj')}>Portfolio</a>
+						</Link>
+					) : (
+						<a onClick={() => handleClick('#proj')}>Portfolio</a>
+					)}
 				</li>
 				<li className='navbar-item'>
-					{/* <Link to='/'> */}
-					<a onClick={() => handleClick('#contact-me')}>Contact Me</a>
-					{/* </Link> */}
+					{location.pathname != '/' ? (
+						<Link to='/'>
+							<a onClick={() => handleClick('#contact-me')}>Contact Me</a>
+						</Link>
+					) : (
+						<a onClick={() => handleClick('#contact-me')}>Contact Me</a>
+					)}
 				</li>
 			</ul>
 		</nav>
