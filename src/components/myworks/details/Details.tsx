@@ -53,7 +53,7 @@ export function Details(proj: string) {
 					<div className='details-header-head'>
 						<img src={`../../../../assets/images/${data.image}`} alt='' />
 						<div className='details-header-head-title'>
-							<h1>{data.title}</h1>
+							<h2>{data.title}</h2>
 							<h3>{data.subtitle}</h3>
 							<h4>{data.date}</h4>
 						</div>
@@ -80,7 +80,6 @@ export function Details(proj: string) {
 					</div>
 				</div>
 				<div className='details-botSection'>
-					<div className='details-botSection-comet'></div>
 					<h2>Solution</h2>
 					<p>{data.solution}</p>
 					<h2>Reflection</h2>
