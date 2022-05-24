@@ -7,6 +7,7 @@ import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import Footer from './../../navbar/Footer';
 import Navbar from './../../navbar/Navbar';
+import { motion } from 'framer-motion';
 
 export function Details(proj: string) {
 	const location = useLocation();
@@ -48,10 +49,12 @@ export function Details(proj: string) {
 		<>
 			<Navbar />
 			<div className='details'>
-				<div className={`details-bg-${proj}`} />
 				<div className='details-header'>
 					<div className='details-header-head'>
-						<img src={`../../../../assets/images/${data.image}`} alt='' />
+						<img
+							src={`../../../../assets/images/${data.image}`}
+							alt={data.image}
+						/>
 						<div className='details-header-head-title'>
 							<h2>{data.title}</h2>
 							<h3>{data.subtitle}</h3>
@@ -62,27 +65,44 @@ export function Details(proj: string) {
 						<p>{data.desc}</p>
 					</div>
 				</div>
+
 				<div className='details-hero'>
-					<div className='details-hero-circle'></div>
+					<div className='details-hero-bg' />
+					<motion.div
+						className={`details-hero-${proj}`}
+						initial={{ opacity: 0, x: '50%', y: '-50%' }}
+						animate={{ opacity: 0.35, x: 0, y: 0 }}
+						transition={{ delay: 1, duration: 1 }}
+					></motion.div>
+					<motion.div
+						className={`details-hero-${proj}-sub`}
+						initial={{ opacity: 0, x: '50%', y: '-50%' }}
+						animate={{ opacity: 0.35, x: 0, y: 0 }}
+						transition={{ delay: 0.65, duration: 1 }}
+					></motion.div>
+					<motion.div
+						className={`details-hero-${proj}-sub2`}
+						initial={{ opacity: 0, x: '50%', y: '-50%' }}
+						animate={{ opacity: 0.35, x: 0, y: 0 }}
+						transition={{ delay: 0.35, duration: 1 }}
+					></motion.div>
 					<div className='details-hero-frame'>
 						<img src={`../../../../assets/images/${data.frame}`} alt='' />
 					</div>
 					<div className='details-hero-right'>
-						<h2>My Role</h2>
+						<h3>My Role</h3>
 						<p>{data.role}</p>
-						<div className='details-hero-right-divider'></div>
-						<h2>Challenge</h2>
+						<h3>Challenge</h3>
 						<p>{data.challenge}</p>
-						<div className='details-hero-right-divider'></div>
 						<div className='details-hero-right-stack'>
 							{data.stack.map((path) => Stack(path))}
 						</div>
 					</div>
 				</div>
 				<div className='details-botSection'>
-					<h2>Solution</h2>
+					<h3>Solution</h3>
 					<p>{data.solution}</p>
-					<h2>Reflection</h2>
+					<h3>Reflection</h3>
 					<p>{data.reflection}</p>
 					<div className='details-botSection-buttons'>
 						<Button endIcon={<ArrowForwardOutlinedIcon />} disableRipple={true}>
