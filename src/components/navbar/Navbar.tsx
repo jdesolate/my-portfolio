@@ -23,7 +23,7 @@ function Navbar() {
 
 				<li className='navbar-item'>
 					{/* <Link to='/'> */}
-					<a onClick={() => handleClick('#proj')}>Projects</a>
+					<a onClick={() => handleClick('#proj')}>Portfolio</a>
 					{/* </Link> */}
 				</li>
 				<li className='navbar-item'>

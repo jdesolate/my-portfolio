@@ -1,7 +1,7 @@
-import image1 from '../../../assets/images/Scrabble.png';
-import image2 from '../../../assets/images/Graduation.png';
-import image3 from '../../../assets/images/Mervin.png';
-import image4 from '../../../assets/images/Mervin2.png';
+import image1 from '../../../assets/images/Mervin.png';
+import image2 from '../../../assets/images/Mervin2.png';
+import image3 from '../../../assets/images/Scrabble.png';
+import image4 from '../../../assets/images/Graduation.png';
 import image5 from '../../../assets/images/Mervin3.png';
 import image6 from '../../../assets/images/Silhouette.png';
 import image7 from '../../../assets/images/Accenture.png';
@@ -9,7 +9,7 @@ import image7 from '../../../assets/images/Accenture.png';
 export const projects = [
 	{
 		id: 0,
-		route: '/projects/booksynation',
+		route: '/booksynation',
 		title: 'BookSyNation',
 		image: 'Bookcine.svg',
 		frame: 'Bookcine2.png',
@@ -38,7 +38,7 @@ export const projects = [
 	},
 	{
 		id: 1,
-		route: '/projects/recycl3r',
+		route: '/recycl3r',
 		title: 'ReCycl3R',
 		image: 'Recycler.png',
 		frame: 'Recycler2.png',
@@ -66,7 +66,7 @@ export const projects = [
 	},
 	{
 		id: 2,
-		route: '/projects/whitelist',
+		route: '/whitelist',
 		title: 'WhiteList',
 		image: 'Whitelist.svg',
 		frame: 'Whitelist2.png',
@@ -101,7 +101,7 @@ export const projects = [
 	},
 	{
 		id: 3,
-		route: '/projects/datagrades',
+		route: '/datagrades',
 		title: 'DataGrades',
 		image: 'Datagrades.png',
 		frame: 'Datagrades2.png',
@@ -128,7 +128,7 @@ export const projects = [
 	},
 	{
 		id: 4,
-		route: '/projects/altruwiz',
+		route: '/altruwiz',
 		title: 'AltruWiz',
 		image: 'Altruwiz.svg',
 		frame: 'Altruwiz2.png',
@@ -163,7 +163,7 @@ export const projects = [
 	},
 	{
 		id: 5,
-		route: '/projects/tingbits',
+		route: '/tingbits',
 		title: 'TingBits',
 		image: 'Tingbits.png',
 		frame: 'Tingbits2.png',

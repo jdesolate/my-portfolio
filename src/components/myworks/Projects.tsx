@@ -18,7 +18,7 @@ function Projects() {
 					/>
 					<div className='projects-header'>
 						<div className='projects-header-title'>
-							<h2>Projects</h2>
+							<h2>Portfolio</h2>
 						</div>
 						<p>
 							Most of these projects are made together with a team. I worked in
@@ -71,12 +71,12 @@ function Projects() {
 									</div>
 									<div className='projects-card-col2-bottom-right'>
 										<>
-											<Button
+											{/* <Button
 												endIcon={<ArrowForwardOutlinedIcon />}
 												disableRipple={true}
 											>
 												View on
-											</Button>
+											</Button> */}
 											{data.viewButton.github
 												? viewButtons(
 														data.viewButton.githubLink,

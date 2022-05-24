@@ -15,12 +15,12 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 		<Router>
 			<Routes>
 				<Route path='/' element={<Home />} />
-				<Route path='/projects/booksynation' element={<Booksynation />} />
-				<Route path='/projects/recycl3r' element={<Recycler />} />
-				<Route path='/projects/whitelist' element={<Whitelist />} />
-				<Route path='/projects/datagrades' element={<Datagrades />} />
-				<Route path='/projects/altruwiz' element={<Altruwiz />} />
-				<Route path='/projects/tingbits' element={<Tingbits />} />
+				<Route path='/booksynation' element={<Booksynation />} />
+				<Route path='/recycl3r' element={<Recycler />} />
+				<Route path='/whitelist' element={<Whitelist />} />
+				<Route path='/datagrades' element={<Datagrades />} />
+				<Route path='/altruwiz' element={<Altruwiz />} />
+				<Route path='/tingbits' element={<Tingbits />} />
 				<Route path='*' element={<Error />} />
 			</Routes>
 		</Router>
