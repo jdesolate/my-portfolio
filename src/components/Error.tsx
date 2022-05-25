@@ -1,4 +1,5 @@
 import React from 'react';
+import Loader from './navbar/Loader';
 
 function Error() {
 	return (
@@ -16,6 +17,7 @@ function Error() {
 		>
 			<h2>Error 404</h2>
 			<p>Page not found</p>
+			<Loader />
 		</div>
 	);
 }
