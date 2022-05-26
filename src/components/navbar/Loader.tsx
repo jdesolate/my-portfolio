@@ -5,7 +5,7 @@ import { DotLoader } from 'react-spinners';
 function Loader() {
 	const [time, setTime] = useState(true);
 
-	setTimeout(() => setTime(false), 3000);
+	setTimeout(() => setTime(false), 2000);
 
 	return (
 		<div

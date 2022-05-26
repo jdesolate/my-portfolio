@@ -169,7 +169,7 @@ export const projects = [
 		frame: 'Tingbits2.png',
 		subtitle: 'Personal Project',
 		date: 'Ongoing',
-		desc: "TingBits is a personal project that I'm presently working on. It's a smartphone application that makes lending and borrowing money simple.",
+		desc: "TingBits is a personal project that I'm presently working on. It's a mobile application that makes lending and borrowing money simple.",
 		role: 'Full-stack Developer, UI/UX Designer',
 		challenge:
 			'Implementing a financial app would require a great amount of time and work on my part, and integrating APIs from payment services such as Gcash or Paymaya would make it much more difficult.',

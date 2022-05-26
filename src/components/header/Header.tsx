@@ -35,7 +35,7 @@ function Header() {
 					<div className='header-container-col1'>
 						<div className='header-container-col1-top'>
 							<div className='header-container-col1-top-textcont'>
-								<p>Hey I'm</p>
+								<p>Maayong Adlaw! I'm</p>
 								<div className='header-container-col1-top-textcont-text1-name'>
 									<h1 className='header-container-col1-top-textcont-text1-name-1'>
 										Mervin John{' '}

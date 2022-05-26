@@ -30,8 +30,10 @@ function About() {
 
 			<div className='about-desc2'>
 				<p>
-					Solving problems, being in different teams, delivering works, and
-					accomplishing goals drives my passion in this field.
+					I like creating software and UI/UX designs. Constantly encouraging
+					myself, adapting to new situations, and pursuing my goals are what
+					have shaped me into the person I am today. Aside from all of this, I
+					try to spread as much joy as I can everywhere I go.
 				</p>
 			</div>
 
@@ -42,7 +44,7 @@ function About() {
 					dragConstraints={{ right: 0, left: -width - 1000 }}
 					initial={{ x: 0 }}
 					animate={{ x: -1000 }}
-					transition={{ delay: 5, duration: 20 }}
+					transition={{ delay: 8, duration: 25 }}
 					className='about-hero-carousel'
 				>
 					<>
@@ -65,9 +67,9 @@ function About() {
 						<h4>- Confucius</h4>
 						<p>
 							I believe that everyone was born with the will to succeed in life.
-							However, the connections we make along the way help us recognize
-							that we are not alone. That we are capable of living not just for
-							ourselves but also for others.
+							However, the connections we make along the way help us constantly
+							realize that we are not alone. That we are capable of living not
+							just for ourselves but also for others.
 						</p>
 					</div>
 				</div>
