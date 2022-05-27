@@ -76,7 +76,7 @@ export const projects = [
 		imageAlt: 'Letter W and L on a tile',
 		frame: 'Whitelist2.png',
 		frameAlt: 'WhiteList showcase of different screens.',
-		subtitle: 'Modern Systems and Design',
+		subtitle: 'Modern Systems Analysis & Design',
 		date: 'July 2021',
 		desc: 'WhiteList is a school project I made with two other teammates. It is a centralized informational display hub of various rentable locations within Cebu. It provides its users with a simplified method for finding and connecting people to rentable opportunities.',
 		role: 'Front-end developer, UI/UX Designer, Software Testing & Documentation',

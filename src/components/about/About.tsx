@@ -34,9 +34,8 @@ function About() {
 					projects is important to me as a software engineer, hence I'm looking
 					for a role in an established IT company. <br /> <br /> Constantly
 					encouraging myself, adapting to new situations, and pursuing my goals
-					are what have shaped me into the person I am today. <br /> <br />{' '}
-					Aside from all of this, I try to spread as much joy as I can
-					everywhere I go.
+					have shaped me into the person I am today. <br /> <br /> Aside from
+					all of this, I try to spread as much joy as I can everywhere I go.
 				</p>
 			</div>
 

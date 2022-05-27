@@ -21,9 +21,10 @@ function Projects() {
 							<h2>Portfolio</h2>
 						</div>
 						<p>
-							Most of these projects are made together with a team. I worked in
+							Most of these projects were made together with a team. I worked in
 							a variety of roles such as front-end developer, back-end
-							developer, UI/UX Designer.
+							developer, UI/UX Designer. References have been compiled to a
+							Google document for more information about the projects.
 						</p>
 					</div>
 					{projects.map((data) => (
