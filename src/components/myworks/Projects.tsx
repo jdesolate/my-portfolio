@@ -71,12 +71,6 @@ function Projects() {
 									</div>
 									<div className='projects-card-col2-bottom-right'>
 										<>
-											{/* <Button
-												endIcon={<ArrowForwardOutlinedIcon />}
-												disableRipple={true}
-											>
-												View on
-											</Button> */}
 											{data.viewButton.github
 												? viewButtons(
 														data.viewButton.githubLink,

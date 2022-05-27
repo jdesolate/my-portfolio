@@ -69,19 +69,19 @@ export function Details(proj: string) {
 				<div className='details-hero'>
 					<div className='details-hero-bg' />
 					<motion.div
-						className={`details-hero-${proj}`}
+						className={`details-hero-circle1 ${proj}`}
 						initial={{ opacity: 0, x: '50%', y: '-50%' }}
 						animate={{ opacity: 0.35, x: 0, y: 0 }}
 						transition={{ delay: 1, duration: 1 }}
 					></motion.div>
 					<motion.div
-						className={`details-hero-${proj}-sub`}
+						className={`details-hero-circle2 ${proj}`}
 						initial={{ opacity: 0, x: '50%', y: '-50%' }}
 						animate={{ opacity: 0.35, x: 0, y: 0 }}
 						transition={{ delay: 0.65, duration: 1 }}
 					></motion.div>
 					<motion.div
-						className={`details-hero-${proj}-sub2`}
+						className={`details-hero-circle3 ${proj} `}
 						initial={{ opacity: 0, x: '50%', y: '-50%' }}
 						animate={{ opacity: 0.35, x: 0, y: 0 }}
 						transition={{ delay: 0.35, duration: 1 }}

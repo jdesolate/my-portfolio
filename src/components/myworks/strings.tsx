@@ -47,7 +47,7 @@ export const projects = [
 		frame: 'Recycler2.png',
 		frameAlt: 'ReCycl3R showcase of different screens.',
 		subtitle: 'Accenture Program the Future 2021',
-		desc: 'I worked with a team on the Recycl3R project for Accenture PTF 2021. It is a simulation game for Android devices that will help people learn more about reducing waste and pollution.',
+		desc: 'I worked with a team on the Recycl3R project for Accenture Program The Future 2021. It is a simulation game for Android devices that will help people learn more about reducing waste and pollution.',
 		date: 'July 2021',
 		role: 'Front-end developer, UI/UX Designer',
 		challenge:
