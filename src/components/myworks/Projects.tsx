@@ -41,13 +41,13 @@ function Projects() {
 								<img
 									className='projects-card-col1-frame'
 									src={`../../../../assets/images/${data.frame}`}
-									alt={`${data.title} Frame`}
+									alt={`${data.frameAlt}`}
 								/>
 								<div className='projects-card-col1-overlay'></div>
 								<img
 									className='projects-card-col1-logo'
 									src={`../../../../assets/images/${data.image}`}
-									alt={`${data.title} Logo`}
+									alt={`${data.imageAlt} Logo`}
 								/>
 							</div>
 							<div className='projects-card-col2'>
@@ -80,31 +80,36 @@ function Projects() {
 											{data.viewButton.github
 												? viewButtons(
 														data.viewButton.githubLink,
-														data.viewButton.githubPath
+														data.viewButton.githubPath,
+														'Github Logo'
 												  )
 												: null}
 											{data.viewButton.gdoc
 												? viewButtons(
 														data.viewButton.gdocLink,
-														data.viewButton.gdocPath
+														data.viewButton.gdocPath,
+														'Google Docs Logo'
 												  )
 												: null}
 											{data.viewButton.yt
 												? viewButtons(
 														data.viewButton.ytLink,
-														data.viewButton.ytPath
+														data.viewButton.ytPath,
+														'Youtube Logo'
 												  )
 												: null}
 											{data.viewButton.pdf
 												? viewButtons(
 														data.viewButton.pdfLink,
-														data.viewButton.pdfPath
+														data.viewButton.pdfPath,
+														'PDF icon'
 												  )
 												: null}
 											{data.viewButton.app
 												? viewButtons(
 														data.viewButton.appLink,
-														data.viewButton.appPath
+														data.viewButton.appPath,
+														'Project Application Logo'
 												  )
 												: null}
 										</>

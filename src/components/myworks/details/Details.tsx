@@ -53,7 +53,7 @@ export function Details(proj: string) {
 					<div className='details-header-head'>
 						<img
 							src={`../../../../assets/images/${data.image}`}
-							alt={data.image}
+							alt={data.imageAlt}
 						/>
 						<div className='details-header-head-title'>
 							<h2>{data.title}</h2>
@@ -87,7 +87,10 @@ export function Details(proj: string) {
 						transition={{ delay: 0.35, duration: 1 }}
 					></motion.div>
 					<div className='details-hero-frame'>
-						<img src={`../../../../assets/images/${data.frame}`} alt='' />
+						<img
+							src={`../../../../assets/images/${data.frame}`}
+							alt={`${data.frameAlt}`}
+						/>
 					</div>
 					<div className='details-hero-right'>
 						<h3>My Role</h3>
@@ -111,20 +114,37 @@ export function Details(proj: string) {
 						{data.viewButton.github
 							? viewButtons(
 									data.viewButton.githubLink,
-									data.viewButton.githubPath
+									data.viewButton.githubPath,
+									'Github Logo'
 							  )
 							: null}
 						{data.viewButton.gdoc
-							? viewButtons(data.viewButton.gdocLink, data.viewButton.gdocPath)
+							? viewButtons(
+									data.viewButton.gdocLink,
+									data.viewButton.gdocPath,
+									'Google Docs Logo'
+							  )
 							: null}
 						{data.viewButton.yt
-							? viewButtons(data.viewButton.ytLink, data.viewButton.ytPath)
+							? viewButtons(
+									data.viewButton.ytLink,
+									data.viewButton.ytPath,
+									'Youtube Logo'
+							  )
 							: null}
 						{data.viewButton.pdf
-							? viewButtons(data.viewButton.pdfLink, data.viewButton.pdfPath)
+							? viewButtons(
+									data.viewButton.pdfLink,
+									data.viewButton.pdfPath,
+									'PDF icon'
+							  )
 							: null}
 						{data.viewButton.app
-							? viewButtons(data.viewButton.appLink, data.viewButton.appPath)
+							? viewButtons(
+									data.viewButton.appLink,
+									data.viewButton.appPath,
+									'Project application logo'
+							  )
 							: null}
 					</div>
 				</div>

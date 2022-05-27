@@ -21,20 +21,26 @@ function Footer() {
 					</div>
 					<div className='footer-footcontent-top-right'>
 						<a href='https://github.com/jdesolate' target='_blank'>
-							<img src='../../../assets/images/Github.png' alt='Github' />
+							<img src='../../../assets/images/Github.png' alt='My Github' />
 						</a>
 						<a href='https://twitter.com/TampusMervin' target='_blank'>
-							<img src='../../../assets/images/Twitter.png' alt='Twitter' />
+							<img src='../../../assets/images/Twitter.png' alt='My Twitter' />
 						</a>
 						<a href='https://www.facebook.com/tampus.mervin' target='_blank'>
-							<img src='../../../assets/images/Facebook.png' alt='Facebook' />
+							<img
+								src='../../../assets/images/Facebook.png'
+								alt='My Facebook'
+							/>
 						</a>
 
 						<a
 							href='https://www.linkedin.com/in/mervin-john-tampus-6b1bb3206/'
 							target='_blank'
 						>
-							<img src='../../../assets/images/Linkedin.png' alt='LinkedIn' />
+							<img
+								src='../../../assets/images/Linkedin.png'
+								alt='My LinkedIn'
+							/>
 						</a>
 					</div>
 				</div>
