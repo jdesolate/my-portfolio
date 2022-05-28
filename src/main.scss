@@ -441,11 +441,16 @@ p {
 			flex-direction: column;
 			align-items: center;
 			justify-content: space-evenly;
-
+			@media (max-width: 459px) {
+				&-top {
+					margin-left: 1rem;
+				}
+			}
 			&-top {
 				display: flex;
 				flex-direction: column;
 				width: fit-content;
+				transition: margin 1s ease-in-out;
 				p {
 					margin: 0.5rem 0.2rem;
 				}
@@ -547,7 +552,7 @@ p {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	margin: -5rem 0 8rem 0;
+	margin: -8rem 0 8rem 0;
 	&-cont1 {
 		display: flex;
 		flex-direction: column;

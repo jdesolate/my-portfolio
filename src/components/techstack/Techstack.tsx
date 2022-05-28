@@ -4,7 +4,7 @@ function Techstack() {
 			<div className='techStack-cont1'>
 				<h2>Tech Stack</h2>
 				<p>
-					During the past 2 years, I've worked with a variety of technologies.
+					I've worked with a range of technologies during the past two years.
 				</p>
 			</div>
 			<div className='techStack-cont2'>

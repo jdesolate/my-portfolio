@@ -24,13 +24,16 @@ function Projects() {
 							Most of these projects were made together with a team. I worked in
 							a variety of roles such as front-end developer, back-end
 							developer, UI/UX Designer. References have been compiled to a
-							Google document for more information about the projects.
+							Google Docs file for more information about the projects.
 						</p>
 					</div>
 					{projects.map((data) => (
 						<motion.div
 							className='projects-card'
-							whileHover={{ scale: 1.025 }}
+							whileHover={{
+								scale: 1.025,
+								boxShadow: '2px 4px 4px rgba(0, 0, 0, 0.1)',
+							}}
 							transition={{ duration: 0.2, type: 'tween' }}
 						>
 							<div

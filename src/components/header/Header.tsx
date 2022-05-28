@@ -52,7 +52,7 @@ function Header() {
 								className='header-container-col1-row-button1'
 								onClick={() => handleClick('#proj')}
 							>
-								My Works
+								My Portfolio
 							</button>
 
 							<button
