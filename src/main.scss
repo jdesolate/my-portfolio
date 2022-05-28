@@ -1153,7 +1153,6 @@ p {
 			height: 4rem;
 			display: flex;
 			flex-direction: row;
-			flex-wrap: wrap;
 			align-items: center;
 			justify-content: space-between;
 			img {
@@ -1213,8 +1212,9 @@ p {
 		&-botSection {
 			align-items: flex-start;
 			&-buttons {
-				width: 20rem;
+				width: fit-content;
 				align-self: flex-end;
+				gap: 1rem;
 			}
 		}
 	}

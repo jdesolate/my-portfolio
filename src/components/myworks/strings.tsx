@@ -98,6 +98,9 @@ export const projects = [
 			gdoc: false,
 			yt: false,
 			pdf: true,
+			app: true,
+			appLink: 'https://whitelist-develop.web.app/',
+			appPath: 'Whitelist.svg',
 			pdfLink:
 				'https://drive.google.com/file/d/1RqGArqOhWDulmETL1pum-rhcKKXy9Xv-/view?usp=sharing',
 			githubLink: 'https://github.com/WhiteList-Int/white-list',
