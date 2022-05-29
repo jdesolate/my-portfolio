@@ -9,6 +9,7 @@ import Whitelist from './components/myworks/details/Whitelist';
 import Datagrades from './components/myworks/details/Datagrades';
 import Altruwiz from './components/myworks/details/Altruwiz';
 import Tingbits from './components/myworks/details/Tingbits';
+import Inteletraf from './components/myworks/details/Inteletraf';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
 	<React.StrictMode>
@@ -19,6 +20,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 				<Route path='/recycl3r' element={<Recycler />} />
 				<Route path='/whitelist' element={<Whitelist />} />
 				<Route path='/datagrades' element={<Datagrades />} />
+				<Route path='/inteletraf' element={<Inteletraf />} />
 				<Route path='/altruwiz' element={<Altruwiz />} />
 				<Route path='/tingbits' element={<Tingbits />} />
 				<Route path='*' element={<Error />} />

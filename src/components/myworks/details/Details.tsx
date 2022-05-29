@@ -36,12 +36,16 @@ export function Details(proj: string) {
 			data = projects[3];
 			break;
 		}
-		case 'altruwiz': {
+		case 'inteletraf': {
 			data = projects[4];
 			break;
 		}
-		case 'tingbits': {
+		case 'altruwiz': {
 			data = projects[5];
+			break;
+		}
+		case 'tingbits': {
+			data = projects[6];
 			break;
 		}
 	}

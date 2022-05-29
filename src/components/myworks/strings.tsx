@@ -31,6 +31,10 @@ export const projects = [
 			gdoc: true,
 			yt: false,
 			pdf: false,
+			app: true,
+			appLink:
+				'https://drive.google.com/file/d/14NNNYLmJ4yqL7JEYm3JKSWhcqHDNhqGX/view?fbclid=IwAR1qB_YJX3dZWmme8gmB5spmpoYtCPNk6Pea4ia6dN1DHc6O9AuWpZE0k4A',
+			appPath: 'Bookcine.svg',
 			gdocLink:
 				'https://docs.google.com/document/d/1OJl-SOKKxXE1OlMbFmvfqLnRMilz8VrpuB8xSQ8FQck/edit?usp=sharing',
 			githubLink: 'https://github.com/Book-cine/booksynation',
@@ -62,6 +66,10 @@ export const projects = [
 			gdoc: false,
 			yt: true,
 			pdf: false,
+			app: true,
+			appLink:
+				'https://drive.google.com/file/d/194x3QtL9JRxsa8sgcAAjFu3Bchk-KGmp/view?usp=sharing',
+			appPath: 'Recycler.png',
 			ytLink: 'https://youtu.be/K6d4Sy2CwAA',
 			githubLink: 'https://github.com/Recycler-3R/recycler-v1',
 			githubPath: 'Github.png',
@@ -140,6 +148,35 @@ export const projects = [
 	},
 	{
 		id: 4,
+		route: '/inteletraf',
+		title: 'InTeleTraf',
+		image: 'Inteletraf.svg',
+		imageAlt: 'Letter I,T,T in traffic light',
+		frame: 'Inteletraf2.png',
+		frameAlt: 'Inteletraf showcase of different screens.',
+		subtitle: 'Technopreneurship',
+		desc: 'Inteletraf is a team project in school.  Its goal is to improve traffic and transportation systems by building an Internet of Things (IOT) system that connects people, vehicles, and road equipment to the traffic to make transportation easier, traffic management smarter, and real-time traffic data easier to access.',
+		date: 'December 2021',
+		role: 'UI/UX Designer',
+		challenge:
+			"As the project's UI/UX Chief Officer, I had to be clear about what we were going for with the designs and ensure that what we were creating would provide a wonderful experience to our target users.",
+		solution:
+			"By making a customer journey and empathy map for each of our users' personas, we were able to figure out where they were having trouble with Cebu's current transportation issues. With the information we got from talking to passengers and drivers, we were also able to make changes to our designs that fit with what we observed.",
+		reflection:
+			'Working with people from various college degrees was both inspiring and challenging. Since we specialize in different fields, we had to figure out how to effectively communicate our jargons. Being with a business major allowed me to see and understand business operations for our product.',
+		stack: ['Figma.png'],
+		viewButton: {
+			github: false,
+			gdoc: true,
+			yt: false,
+			pdf: false,
+			gdocLink:
+				'https://docs.google.com/document/d/1OJl-SOKKxXE1OlMbFmvfqLnRMilz8VrpuB8xSQ8FQck/edit?usp=sharing',
+			gdocPath: 'Googledocs.png',
+		},
+	},
+	{
+		id: 5,
 		route: '/altruwiz',
 		title: 'AltruWiz',
 		image: 'Altruwiz.svg',
@@ -176,7 +213,7 @@ export const projects = [
 		},
 	},
 	{
-		id: 5,
+		id: 6,
 		route: '/tingbits',
 		title: 'TingBits',
 		image: 'Tingbits.png',

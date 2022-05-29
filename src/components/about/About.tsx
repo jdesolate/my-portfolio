@@ -46,7 +46,7 @@ function About() {
 					dragConstraints={{ right: 0, left: -width - 1000 }}
 					initial={{ x: 0 }}
 					animate={{ x: -1000 }}
-					transition={{ delay: 8, duration: 25 }}
+					transition={{ delay: 10, duration: 25 }}
 					className='about-hero-carousel'
 				>
 					<>
