@@ -1310,6 +1310,11 @@ p {
 			font-size: var(--fs-h3);
 		}
 	}
+	@media (max-width: 550px) {
+		&-desc1 {
+			padding: 1rem 1rem;
+		}
+	}
 
 	&-hero {
 		padding: 1rem;
@@ -1370,14 +1375,17 @@ p {
 			@media (max-width: 400px) {
 				&-quote {
 					h3 {
+						margin: 1rem 0;
 						text-align: justify;
 					}
 
 					h4 {
+						margin: 1rem 0;
 						font-size: 1.2rem;
 					}
 
 					p {
+						margin: 1rem 0;
 						font-size: var(--fs-h4);
 					}
 				}
