@@ -51,7 +51,7 @@
 		rgba(40, 215, 173, 0.25) 24.48%,
 		rgba(255, 255, 255, 0) 91.46%
 	);
-	--recycler: linear-gradient(
+	--recycl3r: linear-gradient(
 		180deg,
 		rgba(13, 220, 111, 0.25) 24.48%,
 		rgba(255, 255, 255, 0) 91.46%
@@ -1259,8 +1259,8 @@ p {
 .booksynation {
 	background: var(--booksynation);
 }
-.recycler {
-	background: var(--recycler);
+.recycl3r {
+	background: var(--recycl3r);
 }
 .whitelist {
 	background: var(--whitelist);
@@ -1423,14 +1423,17 @@ p {
 		&-resume {
 			margin-top: 1rem;
 			button {
-				font-size: var(--fs-400);
-				font-size: var(--fs-h3);
-				color: var(--color-secondary2);
+				border: 1px solid var(--color-accent1);
+				border-radius: 40px;
+				padding: 0.5rem 1.5rem;
+				font-size: var(--fs-p);
+				color: var(--color-accent1);
 				text-transform: none;
 				&:hover {
 					background-color: none;
-					background: none;
-					color: var(--color-accent1);
+					border: 1px solid var(--color-accent1);
+					background: var(--color-accent1);
+					color: var(--color-primary);
 				}
 			}
 		}

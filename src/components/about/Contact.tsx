@@ -64,7 +64,7 @@ function Contact() {
 					target='_blank'
 				>
 					<Button disableRipple={true} startIcon={<InsertDriveFileIcon />}>
-						My Resume
+						View My Resume
 					</Button>
 				</a>
 			</div>
