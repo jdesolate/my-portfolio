@@ -27,9 +27,10 @@ function Projects() {
 							Google Docs file for more information about the projects.
 						</p>
 					</div>
-					{projects.map((data) => (
+					{projects.map((data, key) => (
 						<motion.div
 							className='projects-card'
+							key={key}
 							whileHover={{
 								scale: 1.025,
 								boxShadow: '2px 4px 4px rgba(0, 0, 0, 0.1)',

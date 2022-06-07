@@ -15,8 +15,14 @@ function pathAlt(path: string) {
 	}
 }
 
-function Stack(path: string) {
-	return <img src={`../../../../assets/images/${path}`} alt={pathAlt(path)} />;
+function Stack(path: string, key: any) {
+	return (
+		<img
+			key={key}
+			src={`../../../../assets/images/${path}`}
+			alt={pathAlt(path)}
+		/>
+	);
 }
 
 export default Stack;

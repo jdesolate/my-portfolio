@@ -1,16 +1,17 @@
 import Button from '@mui/material/Button';
 import ArrowForwardOutlinedIcon from '@mui/icons-material/ArrowForwardOutlined';
-import { projects } from '../Strings';
 import viewButtons from '../viewButtons';
 import Stack from './Stack';
 import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useParams } from 'react-router-dom';
 import Footer from './../../navbar/Footer';
 import Navbar from './../../navbar/Navbar';
 import { motion } from 'framer-motion';
+import { projects } from '../Strings';
 
-export function Details(proj: string) {
+export function Details() {
 	const location = useLocation();
+	let { projectName } = useParams();
 
 	useEffect(() => {
 		const div = document.querySelector('html');
@@ -19,12 +20,12 @@ export function Details(proj: string) {
 
 	var data = projects[0];
 
-	switch (proj) {
+	switch (projectName) {
 		case 'booksynation': {
 			data = projects[0];
 			break;
 		}
-		case 'recycler': {
+		case 'recycl3r': {
 			data = projects[1];
 			break;
 		}
@@ -73,19 +74,19 @@ export function Details(proj: string) {
 				<div className='details-hero'>
 					<div className='details-hero-bg' />
 					<motion.div
-						className={`details-hero-circle1 ${proj}`}
+						className={`details-hero-circle1 ${projectName}`}
 						initial={{ opacity: 0, x: '50%', y: '-50%' }}
 						animate={{ opacity: 0.35, x: 0, y: 0 }}
 						transition={{ delay: 1, duration: 1 }}
 					></motion.div>
 					<motion.div
-						className={`details-hero-circle2 ${proj}`}
+						className={`details-hero-circle2 ${projectName}`}
 						initial={{ opacity: 0, x: '50%', y: '-50%' }}
 						animate={{ opacity: 0.35, x: 0, y: 0 }}
 						transition={{ delay: 0.65, duration: 1 }}
 					></motion.div>
 					<motion.div
-						className={`details-hero-circle3 ${proj} `}
+						className={`details-hero-circle3 ${projectName} `}
 						initial={{ opacity: 0, x: '50%', y: '-50%' }}
 						animate={{ opacity: 0.35, x: 0, y: 0 }}
 						transition={{ delay: 0.35, duration: 1 }}
@@ -102,7 +103,7 @@ export function Details(proj: string) {
 						<h3>Challenge</h3>
 						<p>{data.challenge}</p>
 						<div className='details-hero-right-stack'>
-							{data.stack.map((path) => Stack(path))}
+							{data.stack.map((path, key) => Stack(path, key))}
 						</div>
 					</div>
 				</div>
