@@ -53,7 +53,7 @@ export const projects = [
 		subtitle: 'Accenture Program the Future 2021',
 		desc: 'I worked with a team on the Recycl3R project for Accenture Program The Future 2021. It is a simulation game for Android devices that will help people learn more about reducing waste and pollution.',
 		date: 'July 2021',
-		role: 'Front-end developer, UI/UX Designer',
+		role: 'Front-end developer',
 		challenge:
 			'I had no experience with Flutter at all when I was thrown into the contest and put in charge of the front end. I was also taking two courses with deliverables at the same time, so it was tough to make progress and finish the MVP in one month.',
 		solution:
@@ -91,9 +91,9 @@ export const projects = [
 		challenge:
 			'Being in a team of 3 was difficult to fulfill all the requirements within a month. For me, I have yet to learn the front-end tech stack to be used during that time. I also had been working with ReCycl3R project during this time so it was twice as hard to pull off. ',
 		solution:
-			"The first thing I did was make good use of my time. Set priorities for each deliverable, and then stick to the plan. I learned how to help with front-end development from my teammates and from different online sources. I also helped design the app's user interface and user experience. I made some parts in SRS, and it was my job to make the project's PMP, Test, and Design documents.",
+			"The first thing I did was make good use of my time. Set priorities for each deliverable, and then stick to the plan. I learned how to help with front-end development from my teammates and from different online sources. I also helped design the app's UI/UX design. I made some parts in SRS, and it was my job to make the project's PMP, Test, and Design documents.",
 		reflection:
-			'Working on this project was both fun and moving. As my first project with a team, we had to redesign the UI 3–4 times, implement changes, fix a lot of errors, and keep up with the deliverables. Still, we did it because we worked hard, got ideas from each other, and trusted one another.',
+			'Working on this project was both fun and moving. As my first project with a team, we had to redesign the UI/UX 3–4 times, implement changes, fix a lot of errors, and keep up with the deliverables. Still, we did it because we worked hard, got ideas from each other, and trusted one another.',
 		stack: [
 			'React.png',
 			'Javascript.png',
@@ -186,7 +186,7 @@ export const projects = [
 		subtitle: 'Software Development 2',
 		date: 'Ongoing',
 		desc: 'Altruwiz is an ongoing school project I’m currently developing with a team. It’s a website that serves as a consolidated center for community service activities and initiatives. It helps individuals and organizations to keep track of and participate in community events by exploring, creating, and promoting them.',
-		role: 'Back-end developer, UI/UX Designer',
+		role: 'Back-end developer',
 		challenge:
 			'Synchronizing with new team members have been difficult.  Having different schedules, tasks, and workloads increased the concerns in meeting project timelines and deliverables.',
 		solution:
@@ -222,7 +222,7 @@ export const projects = [
 		frameAlt: 'Tingbits showcase of different screens.',
 		subtitle: 'Personal Project',
 		date: 'Ongoing',
-		desc: "TingBits is a personal project that I'm presently working on. It's a mobile application that makes lending and borrowing money simple.",
+		desc: "TingBits is a personal project that I'm still working on. It's a mobile application that makes lending and borrowing money simple.",
 		role: 'Full-stack Developer, UI/UX Designer',
 		challenge:
 			'Implementing a financial app would require a great amount of time and work on my part, and integrating APIs from payment services such as Gcash or Paymaya would make it much more difficult.',
