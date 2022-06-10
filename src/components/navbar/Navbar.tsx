@@ -1,8 +1,9 @@
-import { Link, useLocation } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 function Navbar() {
-	const location = useLocation();
+	const navigate = useNavigate();
 	const handleClick = (id: string) => {
+		navigate('/');
 		setTimeout(() => {
 			const div = document.querySelector(id);
 			div?.scrollIntoView({
@@ -17,28 +18,18 @@ function Navbar() {
 		<nav className='navbar'>
 			<ul>
 				<li>
-					<Link to='/'>
-						<img src='../../assets/images/MJT Logo.png' alt='MJT Logo' />
-					</Link>
+					<img
+						src='../../assets/images/MJT Logo.png'
+						alt='MJT Logo'
+						onClick={() => handleClick('#main')}
+					/>
 				</li>
 
 				<li className='navbar-item'>
-					{location.pathname != '/' ? (
-						<Link to='/'>
-							<a onClick={() => handleClick('#proj')}>Portfolio</a>
-						</Link>
-					) : (
-						<a onClick={() => handleClick('#proj')}>Portfolio</a>
-					)}
+					<a onClick={() => handleClick('#proj')}>Portfolio</a>
 				</li>
 				<li className='navbar-item'>
-					{location.pathname != '/' ? (
-						<Link to='/'>
-							<a onClick={() => handleClick('#contact-me')}>Contact Me</a>
-						</Link>
-					) : (
-						<a onClick={() => handleClick('#contact-me')}>Contact Me</a>
-					)}
+					<a onClick={() => handleClick('#contact-me')}>Contact Me</a>
 				</li>
 			</ul>
 		</nav>

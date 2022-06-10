@@ -1,23 +1,29 @@
-import { Link } from 'react-router-dom';
-import { useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 function Footer() {
-	const location = useLocation();
-
-	useEffect(() => {
-		const div = document.querySelector('html');
-		div?.scrollTo(0, 0);
-	}, [location]);
+	const navigate = useNavigate();
+	const handleClick = (id: string) => {
+		navigate('/');
+		setTimeout(() => {
+			const div = document.querySelector(id);
+			div?.scrollIntoView({
+				behavior: 'smooth',
+				block: 'start',
+				inline: 'nearest',
+			});
+		}, 200);
+	};
 
 	return (
 		<footer className='footer'>
 			<div className='footer-footcontent'>
 				<div className='footer-footcontent-top'>
 					<div className='footer-footcontent-top-left'>
-						<Link to='/'>
-							<img src='../../../assets/images/MJT Logo.png' alt='MJT Logo' />
-						</Link>
+						<img
+							src='../../../assets/images/MJT Logo.png'
+							alt='MJT Logo'
+							onClick={() => handleClick('#main')}
+						/>
 					</div>
 					<div className='footer-footcontent-top-right'>
 						<a href='https://github.com/jdesolate' target='_blank'>
@@ -45,7 +51,7 @@ function Footer() {
 					</div>
 				</div>
 				<div className='footer-footcontent-bot'>
-					<p>Copyright © 2022 MJT. All rights reserved.</p>
+					<p>© 2022 MJT Portfolio</p>
 				</div>
 			</div>
 		</footer>

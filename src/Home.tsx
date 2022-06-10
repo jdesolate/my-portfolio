@@ -9,7 +9,7 @@ function Home() {
 	return (
 		<>
 			<Navbar />
-			<div className='main'>
+			<div className='main' id='main'>
 				<Header />
 				<Techstack />
 				<Projects />
