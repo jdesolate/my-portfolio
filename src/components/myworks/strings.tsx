@@ -184,8 +184,8 @@ export const projects = [
 		frame: 'Altruwiz2.png',
 		frameAlt: 'Altruwiz showcase of different screens.',
 		subtitle: 'Software Development 2',
-		date: 'Ongoing',
-		desc: 'Altruwiz is an ongoing school project I’m currently developing with a team. It’s a website that serves as a consolidated center for community service activities and initiatives. It helps individuals and organizations to keep track of and participate in community events by exploring, creating, and promoting them.',
+		date: 'June 2022',
+		desc: 'Altruwiz is a school project I developed with a team. It’s a website that serves as a consolidated center for community service activities and initiatives. It helps individuals and organizations to keep track of and participate in community events by exploring, creating, and promoting them.',
 		role: 'Back-end developer',
 		challenge:
 			'Synchronizing with new team members have been difficult.  Having different schedules, tasks, and workloads increased the concerns in meeting project timelines and deliverables.',
