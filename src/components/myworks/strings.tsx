@@ -9,6 +9,43 @@ import image7 from '../../../assets/images/Accenture.png';
 export const projects = [
 	{
 		id: 0,
+		route: '/altruwiz',
+		title: 'AltruWiz',
+		image: 'Altruwiz.svg',
+		imageAlt: 'Big letter A integrated on a wizard hat',
+		frame: 'Altruwiz2.png',
+		frameAlt: 'Altruwiz showcase of different screens.',
+		subtitle: 'Software Development 2',
+		date: 'June 2022',
+		desc: 'Altruwiz is a school project I developed with a team. It’s a website that serves as a consolidated center for community service activities and initiatives. It helps individuals and organizations to keep track of and participate in community events by exploring, creating, and promoting them.',
+		role: 'Back-end developer',
+		challenge:
+			'Synchronizing with new team members have been difficult.  Having different schedules, tasks, and workloads increased the concerns in meeting project timelines and deliverables.',
+		solution:
+			'Knowledge sharing was the key solution we’ve done to improve our workflow. Synchronous coding and tutorials allowed all of us to understand one another and keep ourselves focused on each feature that we had implemented. Inspiring each other and being accountable to our respective tasks made us more productive in doing the project.',
+		reflection:
+			'It was great working with my team especially with a community focused project. Adding levels, achievements and quests features to organized events are some of our idealized solution to increase user engagement for this project.',
+		stack: [
+			'React.png',
+			'Typescript.png',
+			'Sass.png',
+			'Html.png',
+			'Firebase.png',
+		],
+		viewButton: {
+			github: true,
+			gdoc: false,
+			yt: false,
+			pdf: false,
+			app: true,
+			appLink: 'https://altruwiz.web.app/',
+			appPath: 'Altruwiz.svg',
+			githubLink: 'https://github.com/AltruWiz/altruWiz',
+			githubPath: 'Github.png',
+		},
+	},
+	{
+		id: 1,
 		route: '/booksynation',
 		title: 'BookSyNation',
 		image: 'Bookcine.svg',
@@ -43,7 +80,7 @@ export const projects = [
 		},
 	},
 	{
-		id: 1,
+		id: 2,
 		route: '/recycl3r',
 		title: 'ReCycl3R',
 		image: 'Recycler.png',
@@ -77,7 +114,7 @@ export const projects = [
 		},
 	},
 	{
-		id: 2,
+		id: 3,
 		route: '/whitelist',
 		title: 'WhiteList',
 		image: 'Whitelist.svg',
@@ -117,7 +154,7 @@ export const projects = [
 		},
 	},
 	{
-		id: 3,
+		id: 4,
 		route: '/datagrades',
 		title: 'DataGrades',
 		image: 'Datagrades.png',
@@ -147,7 +184,7 @@ export const projects = [
 		},
 	},
 	{
-		id: 4,
+		id: 5,
 		route: '/inteletraf',
 		title: 'InTeleTraf',
 		image: 'Inteletraf.svg',
@@ -175,43 +212,7 @@ export const projects = [
 			gdocPath: 'Googledocs.png',
 		},
 	},
-	{
-		id: 5,
-		route: '/altruwiz',
-		title: 'AltruWiz',
-		image: 'Altruwiz.svg',
-		imageAlt: 'Big letter A integrated on a wizard hat',
-		frame: 'Altruwiz2.png',
-		frameAlt: 'Altruwiz showcase of different screens.',
-		subtitle: 'Software Development 2',
-		date: 'June 2022',
-		desc: 'Altruwiz is a school project I developed with a team. It’s a website that serves as a consolidated center for community service activities and initiatives. It helps individuals and organizations to keep track of and participate in community events by exploring, creating, and promoting them.',
-		role: 'Back-end developer',
-		challenge:
-			'Synchronizing with new team members have been difficult.  Having different schedules, tasks, and workloads increased the concerns in meeting project timelines and deliverables.',
-		solution:
-			'Knowledge sharing was the key solution we’ve done to improve our workflow. Synchronous coding and tutorials allowed all of us to understand one another and keep ourselves focused on each feature that we had implemented. Inspiring each other and being accountable to our respective tasks made us more productive in doing the project.',
-		reflection:
-			'It was great working with my team especially with a community focused project. Adding levels, achievements and quests features to organized events are some of our idealized solution to increase user engagement for this project.',
-		stack: [
-			'React.png',
-			'Typescript.png',
-			'Sass.png',
-			'Html.png',
-			'Firebase.png',
-		],
-		viewButton: {
-			github: true,
-			gdoc: false,
-			yt: false,
-			pdf: false,
-			app: true,
-			appLink: 'https://altruwiz.web.app/',
-			appPath: 'Altruwiz.svg',
-			githubLink: 'https://github.com/AltruWiz/altruWiz',
-			githubPath: 'Github.png',
-		},
-	},
+
 	{
 		id: 6,
 		route: '/tingbits',

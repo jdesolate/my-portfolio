@@ -21,30 +21,31 @@ export function Details() {
 	var data = projects[0];
 
 	switch (projectName) {
-		case 'booksynation': {
+		case 'altruwiz': {
 			data = projects[0];
 			break;
 		}
-		case 'recycl3r': {
+		case 'booksynation': {
 			data = projects[1];
 			break;
 		}
-		case 'whitelist': {
+		case 'recycl3r': {
 			data = projects[2];
 			break;
 		}
-		case 'datagrades': {
+		case 'whitelist': {
 			data = projects[3];
 			break;
 		}
-		case 'inteletraf': {
+		case 'datagrades': {
 			data = projects[4];
 			break;
 		}
-		case 'altruwiz': {
+		case 'inteletraf': {
 			data = projects[5];
 			break;
 		}
+
 		case 'tingbits': {
 			data = projects[6];
 			break;
