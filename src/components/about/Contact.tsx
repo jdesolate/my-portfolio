@@ -60,7 +60,7 @@ function Contact() {
 				</div>
 				<a
 					className='contact-cont-resume'
-					href='https://drive.google.com/file/d/1kpcpWJ-6kg-rtDT9r--dvUGBpJvbdWax/view?usp=sharing'
+					href='https://drive.google.com/file/d/1Q9Eziv7METJK2yD7QZEMpxeP1SwfteSY/view?usp=sharing'
 					target='_blank'
 				>
 					<Button disableRipple={true} startIcon={<InsertDriveFileIcon />}>

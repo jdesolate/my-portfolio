@@ -1,5 +1,4 @@
 import Button from '@mui/material/Button';
-import ArrowForwardOutlinedIcon from '@mui/icons-material/ArrowForwardOutlined';
 import { projects } from './Strings';
 import { useNavigate } from 'react-router-dom';
 import viewButtons from './viewButtons';
@@ -78,38 +77,38 @@ function Projects() {
 										<>
 											{data.viewButton.github
 												? viewButtons(
-														data.viewButton.githubLink,
-														data.viewButton.githubPath,
-														'Github Logo'
-												  )
+													data.viewButton.githubLink,
+													data.viewButton.githubPath,
+													'Github Logo'
+												)
 												: null}
 											{data.viewButton.gdoc
 												? viewButtons(
-														data.viewButton.gdocLink,
-														data.viewButton.gdocPath,
-														'Google Docs Logo'
-												  )
+													data.viewButton.gdocLink,
+													data.viewButton.gdocPath,
+													'Google Docs Logo'
+												)
 												: null}
 											{data.viewButton.yt
 												? viewButtons(
-														data.viewButton.ytLink,
-														data.viewButton.ytPath,
-														'Youtube Logo'
-												  )
+													data.viewButton.ytLink,
+													data.viewButton.ytPath,
+													'Youtube Logo'
+												)
 												: null}
 											{data.viewButton.pdf
 												? viewButtons(
-														data.viewButton.pdfLink,
-														data.viewButton.pdfPath,
-														'PDF icon'
-												  )
+													data.viewButton.pdfLink,
+													data.viewButton.pdfPath,
+													'PDF icon'
+												)
 												: null}
 											{data.viewButton.app
 												? viewButtons(
-														data.viewButton.appLink,
-														data.viewButton.appPath,
-														'Project Application Logo'
-												  )
+													data.viewButton.appLink,
+													data.viewButton.appPath,
+													'Project Application Logo'
+												)
 												: null}
 										</>
 									</div>
