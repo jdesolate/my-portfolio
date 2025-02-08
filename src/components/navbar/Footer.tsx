@@ -29,8 +29,8 @@ function Footer() {
 						<a href='https://github.com/jdesolate' target='_blank'>
 							<img src='../../../assets/images/Github.png' alt='My Github' />
 						</a>
-						<a href='https://twitter.com/TampusMervin' target='_blank'>
-							<img src='../../../assets/images/Twitter.png' alt='My Twitter' />
+						<a href='https://x.com/mj_tampus' target='_blank'>
+							<img src='../../../assets/images/X logo.png' alt='My X' />
 						</a>
 						<a href='https://www.facebook.com/tampus.mervin' target='_blank'>
 							<img
