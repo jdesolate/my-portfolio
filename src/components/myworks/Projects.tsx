@@ -35,7 +35,7 @@ export function getFrameLogoImgSrc(name: string) {
 	}
 }
 
-function getFrameImgSrc(name: string) {
+export function getFrameImgSrc(name: string) {
 	switch (name) {
 		case 'Altruwiz2.png': return AltruwizFrame;
 		case 'Bookcine2.png': return BookcineFrame;

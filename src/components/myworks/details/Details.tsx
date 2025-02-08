@@ -8,6 +8,7 @@ import Footer from './../../navbar/Footer';
 import Navbar from './../../navbar/Navbar';
 import { motion } from 'framer-motion';
 import { projects } from '../Strings';
+import { getFrameLogoImgSrc, getFrameImgSrc } from '../Projects';
 
 export function Details() {
 	const location = useLocation();
@@ -58,7 +59,7 @@ export function Details() {
 				<div className='details-header'>
 					<div className='details-header-head'>
 						<img
-							src={`../../../../assets/images/${data.image}`}
+							src={getFrameLogoImgSrc(data.image)}
 							alt={data.imageAlt}
 						/>
 						<div className='details-header-head-title'>
@@ -94,7 +95,7 @@ export function Details() {
 					></motion.div>
 					<div className='details-hero-frame'>
 						<img
-							src={`../../../../assets/images/${data.frame}`}
+							src={getFrameImgSrc(data.frame)}
 							alt={`${data.frameAlt}`}
 						/>
 					</div>
