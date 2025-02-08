@@ -1,4 +1,6 @@
 import { useNavigate } from 'react-router-dom';
+import { FacebookLogo, GithubLogo, LinkedinLogo, MJTLogo, XLogo } from '../../constants/ImageSources';
+
 
 function Footer() {
 	const navigate = useNavigate();
@@ -19,34 +21,24 @@ function Footer() {
 			<div className='footer-footcontent'>
 				<div className='footer-footcontent-top'>
 					<div className='footer-footcontent-top-left'>
-						<img
-							src='../../../assets/images/MJT Logo.png'
-							alt='MJT Logo'
-							onClick={() => handleClick('#main')}
-						/>
+						<img src={MJTLogo} alt='MJT Logo' onClick={() => handleClick('#main')} />
 					</div>
 					<div className='footer-footcontent-top-right'>
 						<a href='https://github.com/jdesolate' target='_blank'>
-							<img src='../../../assets/images/Github.png' alt='My Github' />
+							<img src={GithubLogo} alt='My Github' />
 						</a>
 						<a href='https://x.com/mj_tampus' target='_blank'>
-							<img src='../../../assets/images/X logo.png' alt='My X' />
+							<img src={XLogo} alt='My X' />
 						</a>
 						<a href='https://www.facebook.com/tampus.mervin' target='_blank'>
-							<img
-								src='../../../assets/images/Facebook.png'
-								alt='My Facebook'
-							/>
+							<img src={FacebookLogo} alt='My Facebook' />
 						</a>
 
 						<a
 							href='https://www.linkedin.com/in/mervin-john-tampus-6b1bb3206/'
 							target='_blank'
 						>
-							<img
-								src='../../../assets/images/Linkedin.png'
-								alt='My LinkedIn'
-							/>
+							<img src={LinkedinLogo} alt='My LinkedIn' />
 						</a>
 					</div>
 				</div>
