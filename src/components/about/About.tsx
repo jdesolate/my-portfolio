@@ -29,12 +29,9 @@ function About() {
 
 			<div className='about-desc1'>
 				<p>
-					Working with cutting-edge technology on diverse and challenging
-					projects is important to me as a software engineer, hence I'm looking
-					for a role in an established IT company. Constantly encouraging
-					myself, adapting to new situations, and pursuing my goals have shaped
-					me into the person I am today. Aside from all of this, I try to spread
-					as much joy as I can everywhere I go.
+					I thrive on creating innovative and impactful websites that bring ideas to life. Together with my partners,
+					I collaborate with clients to design and develop digital solutions that are both functional and inspiring.
+					Every project is an opportunity to embrace new challenges, learn, and grow.
 				</p>
 			</div>
 

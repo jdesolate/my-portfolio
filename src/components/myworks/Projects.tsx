@@ -17,7 +17,7 @@ function Projects() {
 					/>
 					<div className='projects-header'>
 						<div className='projects-header-title'>
-							<h2>Portfolio</h2>
+							<h2>Projects</h2>
 						</div>
 						<p>
 							Most of these projects were made together with a team. I worked in

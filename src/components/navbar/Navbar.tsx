@@ -27,7 +27,7 @@ function Navbar() {
 				</li>
 
 				<li className='navbar-item'>
-					<a onClick={() => handleClick('#proj')}>Portfolio</a>
+					<a onClick={() => handleClick('#proj')}>Projects</a>
 				</li>
 				<li className='navbar-item'>
 					<a onClick={() => handleClick('#contact-me')}>Contact Me</a>
