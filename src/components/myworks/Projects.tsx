@@ -4,6 +4,49 @@ import { useNavigate } from 'react-router-dom';
 import viewButtons from './viewButtons';
 import { motion } from 'framer-motion';
 
+//image
+import AltruwizImage from '../../../assets/images/Altruwiz.svg';
+import BookcineImage from '../../../assets/images/Bookcine.svg';
+import RecyclerImage from '../../../assets/images/Recycler.png';
+import WhitelistImage from '../../../assets/images/Whitelist.svg';
+import DatagradesImage from '../../../assets/images/Datagrades.png';
+import InteletrafImage from '../../../assets/images/Inteletraf.svg';
+import TingbitsImage from '../../../assets/images/Tingbits.png';
+
+//frame
+import AltruwizFrame from '../../../assets/images/Altruwiz2.png';
+import BookcineFrame from '../../../assets/images/Bookcine2.png';
+import RecyclerFrame from '../../../assets/images/Recycler2.png';
+import WhitelistFrame from '../../../assets/images/Whitelist2.png';
+import DatagradesFrame from '../../../assets/images/Datagrades2.png';
+import InteletrafFrame from '../../../assets/images/Inteletraf2.png';
+import TingbitsFrame from '../../../assets/images/Tingbits2.png';
+
+export function getFrameLogoImgSrc(name: string) {
+	switch (name) {
+		case 'Altruwiz.svg': return AltruwizImage;
+		case 'Bookcine.svg': return BookcineImage;
+		case 'Recycler.png': return RecyclerImage;
+		case 'Whitelist.svg': return WhitelistImage;
+		case 'Datagrades.png': return DatagradesImage;
+		case 'Inteletraf.svg': return InteletrafImage;
+		case 'Tingbits.png': return TingbitsImage;
+		default: return "None";
+	}
+}
+
+function getFrameImgSrc(name: string) {
+	switch (name) {
+		case 'Altruwiz2.png': return AltruwizFrame;
+		case 'Bookcine2.png': return BookcineFrame;
+		case 'Recycler2.png': return RecyclerFrame;
+		case 'Whitelist2.png': return WhitelistFrame;
+		case 'Datagrades2.png': return DatagradesFrame;
+		case 'Inteletraf2.png': return InteletrafFrame;
+		case 'Tingbits2.png': return TingbitsFrame;
+	}
+}
+
 function Projects() {
 	const navigate = useNavigate();
 
@@ -44,13 +87,13 @@ function Projects() {
 							>
 								<img
 									className='projects-card-col1-frame'
-									src={`../../../../assets/images/${data.frame}`}
+									src={getFrameImgSrc(data.frame)}
 									alt={`${data.frameAlt}`}
 								/>
 								<div className='projects-card-col1-overlay'></div>
 								<img
 									className='projects-card-col1-logo'
-									src={`../../../../assets/images/${data.image}`}
+									src={getFrameLogoImgSrc(data.image)}
 									alt={`${data.imageAlt} Logo`}
 								/>
 							</div>

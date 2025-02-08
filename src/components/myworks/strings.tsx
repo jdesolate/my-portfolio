@@ -158,7 +158,6 @@ export const projects = [
 		route: '/datagrades',
 		title: 'DataGrades',
 		image: 'Datagrades.png',
-
 		imageAlt: 'Letter D + letter G',
 		frame: 'Datagrades2.png',
 		frameAlt: 'DataGrades showcase of different screens.',
