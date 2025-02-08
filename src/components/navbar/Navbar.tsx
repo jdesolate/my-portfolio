@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom';
+import { MJTLogo } from '../../constants/ImageSources';
 
 function Navbar() {
 	const navigate = useNavigate();
@@ -19,7 +20,7 @@ function Navbar() {
 			<ul>
 				<li>
 					<img
-						src='../../assets/images/MJT Logo.png'
+						src={MJTLogo}
 						alt='MJT Logo'
 						onClick={() => handleClick('#main')}
 					/>

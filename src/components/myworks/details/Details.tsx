@@ -119,38 +119,38 @@ export function Details() {
 						</Button>
 						{data.viewButton.github
 							? viewButtons(
-									data.viewButton.githubLink,
-									data.viewButton.githubPath,
-									'Github Logo'
-							  )
+								data.viewButton.githubLink,
+								data.viewButton.githubPath,
+								'Github Logo'
+							)
 							: null}
 						{data.viewButton.gdoc
 							? viewButtons(
-									data.viewButton.gdocLink,
-									data.viewButton.gdocPath,
-									'Google Docs Logo'
-							  )
+								data.viewButton.gdocLink,
+								data.viewButton.gdocPath,
+								'Google Docs Logo'
+							)
 							: null}
 						{data.viewButton.yt
 							? viewButtons(
-									data.viewButton.ytLink,
-									data.viewButton.ytPath,
-									'Youtube Logo'
-							  )
+								data.viewButton.ytLink,
+								data.viewButton.ytPath,
+								'Youtube Logo'
+							)
 							: null}
 						{data.viewButton.pdf
 							? viewButtons(
-									data.viewButton.pdfLink,
-									data.viewButton.pdfPath,
-									'PDF icon'
-							  )
+								data.viewButton.pdfLink,
+								data.viewButton.pdfPath,
+								'PDF icon'
+							)
 							: null}
 						{data.viewButton.app
 							? viewButtons(
-									data.viewButton.appLink,
-									data.viewButton.appPath,
-									'Project application logo'
-							  )
+								data.viewButton.appLink,
+								data.viewButton.appPath,
+								'Project application logo'
+							)
 							: null}
 					</div>
 				</div>

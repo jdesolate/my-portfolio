@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import Contact from './Contact';
-import Typewriter from 'typewriter-effect';
 import { pics } from '../myworks/Strings';
 import { useState, useRef, useEffect } from 'react';
 
